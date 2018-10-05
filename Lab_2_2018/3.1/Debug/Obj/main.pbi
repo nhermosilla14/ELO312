@@ -321,58 +321,65 @@
 <L><invalid loc>:325:9: macro definition=__EDG_CPP0X_IL_EXTENSIONS_SUPPORTED <US>c:macro@__EDG_CPP0X_IL_EXTENSIONS_SUPPORTED<UE> <DS>__EDG_CPP0X_IL_EXTENSIONS_SUPPORTED<DE> Extent=<ES>325:9 - 325:46<EE>
 <L><invalid loc>:326:9: macro definition=__MSP430F1612__ <US>c:macro@__MSP430F1612__<UE> <DS>__MSP430F1612__<DE> Extent=<ES>326:9 - 326:26<EE>
 <L><invalid loc>:327:9: macro definition=__VERSION__ <US>c:macro@__VERSION__<UE> <DS>__VERSION__<DE> Extent=<ES>327:9 - 327:89<EE>
-<L>D:\Users\Nicolás\Desktop\ELO312\Lab_2_2018\3.1\main.c:1:1: inclusion directive=funciones.h <US><UE> <DS><DE> <IS>D:\Users\Nicolás\Desktop\ELO312\Lab_2_2018\3.1\funciones.h<IE>  [multi-include guarded] Extent=<ES>1:1 - 1:23<EE>
-<L>D:\Users\Nicolás\Desktop\ELO312\Lab_2_2018\3.1\funciones.h:2:9: macro definition=FUNCIONES <US>c:macro@FUNCIONES<UE> <DS>FUNCIONES<DE> Extent=<ES>2:9 - 2:20<EE>
+<L>C:\Users\Usuario\Desktop\ELO312\Lab_2_2018\3.1\main.c:1:1: inclusion directive=funciones.h <US><UE> <DS><DE> <IS>C:\Users\Usuario\Desktop\ELO312\Lab_2_2018\3.1\funciones.h<IE>  [multi-include guarded] Extent=<ES>1:1 - 1:23<EE>
+<L>C:\Users\Usuario\Desktop\ELO312\Lab_2_2018\3.1\funciones.h:2:9: macro definition=FUNCIONES <US>c:macro@FUNCIONES<UE> <DS>FUNCIONES<DE> Extent=<ES>2:9 - 2:20<EE>
 <L><invalid loc>:2:15: TypedefDecl=__builtin_va_list|<invalid loc>:2:15 (Definition) <US><UE> <DS>char *<DE> Extent=<ES>2:1 - 2:32<EE>
-<L>D:\Users\Nicolás\Desktop\ELO312\Lab_2_2018\3.1\funciones.h:6:5: FunctionDecl=suma|D:\Users\Nicolás\Desktop\ELO312\Lab_2_2018\3.1\funciones.h:6:5 (Declaration) <US>c:@F@suma<UE> <DS>int suma(int, int, int, int, int, int)<DE> Extent=<ES>6:1 - 6:57<EE>
-<L>D:\Users\Nicolás\Desktop\ELO312\Lab_2_2018\3.1\funciones.h:6:14: ParmDecl=x1|D:\Users\Nicolás\Desktop\ELO312\Lab_2_2018\3.1\funciones.h:6:14 (Definition) <US>c:funciones.h@121@F@suma@x1<UE> <DS>int<DE> Extent=<ES>6:10 - 6:16<EE>
-<L>D:\Users\Nicolás\Desktop\ELO312\Lab_2_2018\3.1\funciones.h:6:22: ParmDecl=x2|D:\Users\Nicolás\Desktop\ELO312\Lab_2_2018\3.1\funciones.h:6:22 (Definition) <US>c:funciones.h@129@F@suma@x2<UE> <DS>int<DE> Extent=<ES>6:18 - 6:24<EE>
-<L>D:\Users\Nicolás\Desktop\ELO312\Lab_2_2018\3.1\funciones.h:6:30: ParmDecl=x3|D:\Users\Nicolás\Desktop\ELO312\Lab_2_2018\3.1\funciones.h:6:30 (Definition) <US>c:funciones.h@137@F@suma@x3<UE> <DS>int<DE> Extent=<ES>6:26 - 6:32<EE>
-<L>D:\Users\Nicolás\Desktop\ELO312\Lab_2_2018\3.1\funciones.h:6:38: ParmDecl=x4|D:\Users\Nicolás\Desktop\ELO312\Lab_2_2018\3.1\funciones.h:6:38 (Definition) <US>c:funciones.h@145@F@suma@x4<UE> <DS>int<DE> Extent=<ES>6:34 - 6:40<EE>
-<L>D:\Users\Nicolás\Desktop\ELO312\Lab_2_2018\3.1\funciones.h:6:46: ParmDecl=x5|D:\Users\Nicolás\Desktop\ELO312\Lab_2_2018\3.1\funciones.h:6:46 (Definition) <US>c:funciones.h@153@F@suma@x5<UE> <DS>int<DE> Extent=<ES>6:42 - 6:48<EE>
-<L>D:\Users\Nicolás\Desktop\ELO312\Lab_2_2018\3.1\funciones.h:6:54: ParmDecl=x6|D:\Users\Nicolás\Desktop\ELO312\Lab_2_2018\3.1\funciones.h:6:54 (Definition) <US>c:funciones.h@161@F@suma@x6<UE> <DS>int<DE> Extent=<ES>6:50 - 6:56<EE>
-<L>D:\Users\Nicolás\Desktop\ELO312\Lab_2_2018\3.1\funciones.h:11:5: FunctionDecl=suma2|D:\Users\Nicolás\Desktop\ELO312\Lab_2_2018\3.1\funciones.h:11:5 (Declaration) <US>c:@F@suma2<UE> <DS>int suma2(int *, int *, int *, int *, int *, int *)<DE> Extent=<ES>11:1 - 11:64<EE>
-<L>D:\Users\Nicolás\Desktop\ELO312\Lab_2_2018\3.1\funciones.h:11:16: ParmDecl=x1|D:\Users\Nicolás\Desktop\ELO312\Lab_2_2018\3.1\funciones.h:11:16 (Definition) <US>c:funciones.h@258@F@suma2@x1<UE> <DS>int *<DE> Extent=<ES>11:11 - 11:18<EE>
-<L>D:\Users\Nicolás\Desktop\ELO312\Lab_2_2018\3.1\funciones.h:11:25: ParmDecl=x2|D:\Users\Nicolás\Desktop\ELO312\Lab_2_2018\3.1\funciones.h:11:25 (Definition) <US>c:funciones.h@267@F@suma2@x2<UE> <DS>int *<DE> Extent=<ES>11:20 - 11:27<EE>
-<L>D:\Users\Nicolás\Desktop\ELO312\Lab_2_2018\3.1\funciones.h:11:34: ParmDecl=x3|D:\Users\Nicolás\Desktop\ELO312\Lab_2_2018\3.1\funciones.h:11:34 (Definition) <US>c:funciones.h@276@F@suma2@x3<UE> <DS>int *<DE> Extent=<ES>11:29 - 11:36<EE>
-<L>D:\Users\Nicolás\Desktop\ELO312\Lab_2_2018\3.1\funciones.h:11:43: ParmDecl=x4|D:\Users\Nicolás\Desktop\ELO312\Lab_2_2018\3.1\funciones.h:11:43 (Definition) <US>c:funciones.h@285@F@suma2@x4<UE> <DS>int *<DE> Extent=<ES>11:38 - 11:45<EE>
-<L>D:\Users\Nicolás\Desktop\ELO312\Lab_2_2018\3.1\funciones.h:11:52: ParmDecl=x5|D:\Users\Nicolás\Desktop\ELO312\Lab_2_2018\3.1\funciones.h:11:52 (Definition) <US>c:funciones.h@294@F@suma2@x5<UE> <DS>int *<DE> Extent=<ES>11:47 - 11:54<EE>
-<L>D:\Users\Nicolás\Desktop\ELO312\Lab_2_2018\3.1\funciones.h:11:61: ParmDecl=x6|D:\Users\Nicolás\Desktop\ELO312\Lab_2_2018\3.1\funciones.h:11:61 (Definition) <US>c:funciones.h@303@F@suma2@x6<UE> <DS>int *<DE> Extent=<ES>11:56 - 11:63<EE>
-<L>D:\Users\Nicolás\Desktop\ELO312\Lab_2_2018\3.1\main.c:3:5: FunctionDecl=main|D:\Users\Nicolás\Desktop\ELO312\Lab_2_2018\3.1\main.c:3:5 (Definition) <US>c:@F@main<UE> <DS>int main(void)<DE> Extent=<ES>3:1 - 9:2<EE>
-<L>D:\Users\Nicolás\Desktop\ELO312\Lab_2_2018\3.1\main.c:4:1: CompoundStmt= <US><UE> <DS><DE> Extent=<ES>4:1 - 9:2<EE>
-<L>D:\Users\Nicolás\Desktop\ELO312\Lab_2_2018\3.1\main.c:5:3: DeclStmt= <US><UE> <DS><DE> Extent=<ES>5:3 - 5:9<EE>
-<L>D:\Users\Nicolás\Desktop\ELO312\Lab_2_2018\3.1\main.c:5:7: VarDecl=x|D:\Users\Nicolás\Desktop\ELO312\Lab_2_2018\3.1\main.c:5:7 (Definition) <US>c:main.c@43@F@main@x<UE> <DS>x<DE> Extent=<ES>5:3 - 5:8<EE>
-<L>D:\Users\Nicolás\Desktop\ELO312\Lab_2_2018\3.1\main.c:6:3: DeclStmt= <US><UE> <DS><DE> Extent=<ES>6:3 - 6:54<EE>
-<L>D:\Users\Nicolás\Desktop\ELO312\Lab_2_2018\3.1\main.c:6:7: VarDecl=x1|D:\Users\Nicolás\Desktop\ELO312\Lab_2_2018\3.1\main.c:6:7 (Definition) <US>c:main.c@53@F@main@x1<UE> <DS>x1<DE> Extent=<ES>6:3 - 6:13<EE>
-<L>D:\Users\Nicolás\Desktop\ELO312\Lab_2_2018\3.1\main.c:6:12: IntegerLiteral= <US><UE> <DS><DE> Extent=<ES>6:12 - 6:13<EE>
-<L>D:\Users\Nicolás\Desktop\ELO312\Lab_2_2018\3.1\main.c:6:15: VarDecl=x2|D:\Users\Nicolás\Desktop\ELO312\Lab_2_2018\3.1\main.c:6:15 (Declaration) <US>c:main.c@53@F@main@x2<UE> <DS>x2<DE> Extent=<ES>6:15 - 6:21<EE>
-<L>D:\Users\Nicolás\Desktop\ELO312\Lab_2_2018\3.1\main.c:6:20: IntegerLiteral= <US><UE> <DS><DE> Extent=<ES>6:20 - 6:21<EE>
-<L>D:\Users\Nicolás\Desktop\ELO312\Lab_2_2018\3.1\main.c:6:23: VarDecl=x3|D:\Users\Nicolás\Desktop\ELO312\Lab_2_2018\3.1\main.c:6:23 (Declaration) <US>c:main.c@53@F@main@x3<UE> <DS>x3<DE> Extent=<ES>6:23 - 6:29<EE>
-<L>D:\Users\Nicolás\Desktop\ELO312\Lab_2_2018\3.1\main.c:6:28: IntegerLiteral= <US><UE> <DS><DE> Extent=<ES>6:28 - 6:29<EE>
-<L>D:\Users\Nicolás\Desktop\ELO312\Lab_2_2018\3.1\main.c:6:31: VarDecl=x4|D:\Users\Nicolás\Desktop\ELO312\Lab_2_2018\3.1\main.c:6:31 (Declaration) <US>c:main.c@53@F@main@x4<UE> <DS>x4<DE> Extent=<ES>6:31 - 6:37<EE>
-<L>D:\Users\Nicolás\Desktop\ELO312\Lab_2_2018\3.1\main.c:6:36: IntegerLiteral= <US><UE> <DS><DE> Extent=<ES>6:36 - 6:37<EE>
-<L>D:\Users\Nicolás\Desktop\ELO312\Lab_2_2018\3.1\main.c:6:39: VarDecl=x5|D:\Users\Nicolás\Desktop\ELO312\Lab_2_2018\3.1\main.c:6:39 (Declaration) <US>c:main.c@53@F@main@x5<UE> <DS>x5<DE> Extent=<ES>6:39 - 6:45<EE>
-<L>D:\Users\Nicolás\Desktop\ELO312\Lab_2_2018\3.1\main.c:6:44: IntegerLiteral= <US><UE> <DS><DE> Extent=<ES>6:44 - 6:45<EE>
-<L>D:\Users\Nicolás\Desktop\ELO312\Lab_2_2018\3.1\main.c:6:47: VarDecl=x6|D:\Users\Nicolás\Desktop\ELO312\Lab_2_2018\3.1\main.c:6:47 (Declaration) <US>c:main.c@53@F@main@x6<UE> <DS>x6<DE> Extent=<ES>6:47 - 6:53<EE>
-<L>D:\Users\Nicolás\Desktop\ELO312\Lab_2_2018\3.1\main.c:6:52: IntegerLiteral= <US><UE> <DS><DE> Extent=<ES>6:52 - 6:53<EE>
-<L>D:\Users\Nicolás\Desktop\ELO312\Lab_2_2018\3.1\main.c:7:3: BinaryOperator= <US><UE> <DS><DE> Extent=<ES>7:3 - 7:37<EE>
-<L>D:\Users\Nicolás\Desktop\ELO312\Lab_2_2018\3.1\main.c:7:3: DeclRefExpr=x|D:\Users\Nicolás\Desktop\ELO312\Lab_2_2018\3.1\main.c:5:7 (Reference) <US>c:main.c@43@F@main@x<UE> <DS>x<DE> Extent=<ES>7:3 - 7:4<EE>
-<L>D:\Users\Nicolás\Desktop\ELO312\Lab_2_2018\3.1\main.c:7:7: CallExpr=suma2|D:\Users\Nicolás\Desktop\ELO312\Lab_2_2018\3.1\funciones.h:11:5 <US>c:@F@suma2<UE> <DS>int suma2(int *, int *, int *, int *, int *, int *)<DE> Extent=<ES>7:7 - 7:37<EE>
-<L>D:\Users\Nicolás\Desktop\ELO312\Lab_2_2018\3.1\main.c:7:7: UnexposedExpr=suma2|D:\Users\Nicolás\Desktop\ELO312\Lab_2_2018\3.1\funciones.h:11:5 <US>c:@F@suma2<UE> <DS>int suma2(int *, int *, int *, int *, int *, int *)<DE> Extent=<ES>7:7 - 7:12<EE>
-<L>D:\Users\Nicolás\Desktop\ELO312\Lab_2_2018\3.1\main.c:7:7: DeclRefExpr=suma2|D:\Users\Nicolás\Desktop\ELO312\Lab_2_2018\3.1\funciones.h:11:5 (Reference) <US>c:@F@suma2<UE> <DS>int suma2(int *, int *, int *, int *, int *, int *)<DE> Extent=<ES>7:7 - 7:12<EE>
-<L>D:\Users\Nicolás\Desktop\ELO312\Lab_2_2018\3.1\main.c:7:13: UnaryOperator= <US><UE> <DS><DE> Extent=<ES>7:13 - 7:16<EE>
-<L>D:\Users\Nicolás\Desktop\ELO312\Lab_2_2018\3.1\main.c:7:14: DeclRefExpr=x1|D:\Users\Nicolás\Desktop\ELO312\Lab_2_2018\3.1\main.c:6:7 (Reference) <US>c:main.c@53@F@main@x1<UE> <DS>x1<DE> Extent=<ES>7:14 - 7:16<EE>
-<L>D:\Users\Nicolás\Desktop\ELO312\Lab_2_2018\3.1\main.c:7:17: UnaryOperator= <US><UE> <DS><DE> Extent=<ES>7:17 - 7:20<EE>
-<L>D:\Users\Nicolás\Desktop\ELO312\Lab_2_2018\3.1\main.c:7:18: DeclRefExpr=x2|D:\Users\Nicolás\Desktop\ELO312\Lab_2_2018\3.1\main.c:6:15 (Reference) <US>c:main.c@53@F@main@x2<UE> <DS>x2<DE> Extent=<ES>7:18 - 7:20<EE>
-<L>D:\Users\Nicolás\Desktop\ELO312\Lab_2_2018\3.1\main.c:7:21: UnaryOperator= <US><UE> <DS><DE> Extent=<ES>7:21 - 7:24<EE>
-<L>D:\Users\Nicolás\Desktop\ELO312\Lab_2_2018\3.1\main.c:7:22: DeclRefExpr=x3|D:\Users\Nicolás\Desktop\ELO312\Lab_2_2018\3.1\main.c:6:23 (Reference) <US>c:main.c@53@F@main@x3<UE> <DS>x3<DE> Extent=<ES>7:22 - 7:24<EE>
-<L>D:\Users\Nicolás\Desktop\ELO312\Lab_2_2018\3.1\main.c:7:25: UnaryOperator= <US><UE> <DS><DE> Extent=<ES>7:25 - 7:28<EE>
-<L>D:\Users\Nicolás\Desktop\ELO312\Lab_2_2018\3.1\main.c:7:26: DeclRefExpr=x4|D:\Users\Nicolás\Desktop\ELO312\Lab_2_2018\3.1\main.c:6:31 (Reference) <US>c:main.c@53@F@main@x4<UE> <DS>x4<DE> Extent=<ES>7:26 - 7:28<EE>
-<L>D:\Users\Nicolás\Desktop\ELO312\Lab_2_2018\3.1\main.c:7:29: UnaryOperator= <US><UE> <DS><DE> Extent=<ES>7:29 - 7:32<EE>
-<L>D:\Users\Nicolás\Desktop\ELO312\Lab_2_2018\3.1\main.c:7:30: DeclRefExpr=x5|D:\Users\Nicolás\Desktop\ELO312\Lab_2_2018\3.1\main.c:6:39 (Reference) <US>c:main.c@53@F@main@x5<UE> <DS>x5<DE> Extent=<ES>7:30 - 7:32<EE>
-<L>D:\Users\Nicolás\Desktop\ELO312\Lab_2_2018\3.1\main.c:7:33: UnaryOperator= <US><UE> <DS><DE> Extent=<ES>7:33 - 7:36<EE>
-<L>D:\Users\Nicolás\Desktop\ELO312\Lab_2_2018\3.1\main.c:7:34: DeclRefExpr=x6|D:\Users\Nicolás\Desktop\ELO312\Lab_2_2018\3.1\main.c:6:47 (Reference) <US>c:main.c@53@F@main@x6<UE> <DS>x6<DE> Extent=<ES>7:34 - 7:36<EE>
-<L>D:\Users\Nicolás\Desktop\ELO312\Lab_2_2018\3.1\main.c:8:3: ReturnStmt= <US><UE> <DS><DE> Extent=<ES>8:3 - 8:12<EE>
-<L>D:\Users\Nicolás\Desktop\ELO312\Lab_2_2018\3.1\main.c:8:9: UnexposedExpr= <US><UE> <DS><DE> Extent=<ES>8:9 - 8:12<EE>
-<L>D:\Users\Nicolás\Desktop\ELO312\Lab_2_2018\3.1\main.c:8:9: ParenExpr= <US><UE> <DS><DE> Extent=<ES>8:9 - 8:12<EE>
-<L>D:\Users\Nicolás\Desktop\ELO312\Lab_2_2018\3.1\main.c:8:10: DeclRefExpr=x|D:\Users\Nicolás\Desktop\ELO312\Lab_2_2018\3.1\main.c:5:7 (Reference) <US>c:main.c@43@F@main@x<UE> <DS>x<DE> Extent=<ES>8:10 - 8:11<EE>
+<L>C:\Users\Usuario\Desktop\ELO312\Lab_2_2018\3.1\funciones.h:6:5: FunctionDecl=suma|C:\Users\Usuario\Desktop\ELO312\Lab_2_2018\3.1\funciones.h:6:5 (Declaration) <US>c:@F@suma<UE> <DS>int suma(int, int, int, int, int, int)<DE> Extent=<ES>6:1 - 6:57<EE>
+<L>C:\Users\Usuario\Desktop\ELO312\Lab_2_2018\3.1\funciones.h:6:14: ParmDecl=x1|C:\Users\Usuario\Desktop\ELO312\Lab_2_2018\3.1\funciones.h:6:14 (Definition) <US>c:funciones.h@121@F@suma@x1<UE> <DS>int<DE> Extent=<ES>6:10 - 6:16<EE>
+<L>C:\Users\Usuario\Desktop\ELO312\Lab_2_2018\3.1\funciones.h:6:22: ParmDecl=x2|C:\Users\Usuario\Desktop\ELO312\Lab_2_2018\3.1\funciones.h:6:22 (Definition) <US>c:funciones.h@129@F@suma@x2<UE> <DS>int<DE> Extent=<ES>6:18 - 6:24<EE>
+<L>C:\Users\Usuario\Desktop\ELO312\Lab_2_2018\3.1\funciones.h:6:30: ParmDecl=x3|C:\Users\Usuario\Desktop\ELO312\Lab_2_2018\3.1\funciones.h:6:30 (Definition) <US>c:funciones.h@137@F@suma@x3<UE> <DS>int<DE> Extent=<ES>6:26 - 6:32<EE>
+<L>C:\Users\Usuario\Desktop\ELO312\Lab_2_2018\3.1\funciones.h:6:38: ParmDecl=x4|C:\Users\Usuario\Desktop\ELO312\Lab_2_2018\3.1\funciones.h:6:38 (Definition) <US>c:funciones.h@145@F@suma@x4<UE> <DS>int<DE> Extent=<ES>6:34 - 6:40<EE>
+<L>C:\Users\Usuario\Desktop\ELO312\Lab_2_2018\3.1\funciones.h:6:46: ParmDecl=x5|C:\Users\Usuario\Desktop\ELO312\Lab_2_2018\3.1\funciones.h:6:46 (Definition) <US>c:funciones.h@153@F@suma@x5<UE> <DS>int<DE> Extent=<ES>6:42 - 6:48<EE>
+<L>C:\Users\Usuario\Desktop\ELO312\Lab_2_2018\3.1\funciones.h:6:54: ParmDecl=x6|C:\Users\Usuario\Desktop\ELO312\Lab_2_2018\3.1\funciones.h:6:54 (Definition) <US>c:funciones.h@161@F@suma@x6<UE> <DS>int<DE> Extent=<ES>6:50 - 6:56<EE>
+<L>C:\Users\Usuario\Desktop\ELO312\Lab_2_2018\3.1\funciones.h:11:5: FunctionDecl=suma2|C:\Users\Usuario\Desktop\ELO312\Lab_2_2018\3.1\funciones.h:11:5 (Declaration) <US>c:@F@suma2<UE> <DS>int suma2(int *, int *, int *, int *, int *, int *)<DE> Extent=<ES>11:1 - 11:64<EE>
+<L>C:\Users\Usuario\Desktop\ELO312\Lab_2_2018\3.1\funciones.h:11:16: ParmDecl=x1|C:\Users\Usuario\Desktop\ELO312\Lab_2_2018\3.1\funciones.h:11:16 (Definition) <US>c:funciones.h@258@F@suma2@x1<UE> <DS>int *<DE> Extent=<ES>11:11 - 11:18<EE>
+<L>C:\Users\Usuario\Desktop\ELO312\Lab_2_2018\3.1\funciones.h:11:25: ParmDecl=x2|C:\Users\Usuario\Desktop\ELO312\Lab_2_2018\3.1\funciones.h:11:25 (Definition) <US>c:funciones.h@267@F@suma2@x2<UE> <DS>int *<DE> Extent=<ES>11:20 - 11:27<EE>
+<L>C:\Users\Usuario\Desktop\ELO312\Lab_2_2018\3.1\funciones.h:11:34: ParmDecl=x3|C:\Users\Usuario\Desktop\ELO312\Lab_2_2018\3.1\funciones.h:11:34 (Definition) <US>c:funciones.h@276@F@suma2@x3<UE> <DS>int *<DE> Extent=<ES>11:29 - 11:36<EE>
+<L>C:\Users\Usuario\Desktop\ELO312\Lab_2_2018\3.1\funciones.h:11:43: ParmDecl=x4|C:\Users\Usuario\Desktop\ELO312\Lab_2_2018\3.1\funciones.h:11:43 (Definition) <US>c:funciones.h@285@F@suma2@x4<UE> <DS>int *<DE> Extent=<ES>11:38 - 11:45<EE>
+<L>C:\Users\Usuario\Desktop\ELO312\Lab_2_2018\3.1\funciones.h:11:52: ParmDecl=x5|C:\Users\Usuario\Desktop\ELO312\Lab_2_2018\3.1\funciones.h:11:52 (Definition) <US>c:funciones.h@294@F@suma2@x5<UE> <DS>int *<DE> Extent=<ES>11:47 - 11:54<EE>
+<L>C:\Users\Usuario\Desktop\ELO312\Lab_2_2018\3.1\funciones.h:11:61: ParmDecl=x6|C:\Users\Usuario\Desktop\ELO312\Lab_2_2018\3.1\funciones.h:11:61 (Definition) <US>c:funciones.h@303@F@suma2@x6<UE> <DS>int *<DE> Extent=<ES>11:56 - 11:63<EE>
+<L>C:\Users\Usuario\Desktop\ELO312\Lab_2_2018\3.1\funciones.h:17:5: FunctionDecl=suma3|C:\Users\Usuario\Desktop\ELO312\Lab_2_2018\3.1\funciones.h:17:5 (Declaration) <US>c:@F@suma3<UE> <DS>int suma3(int, int, int, int, int, int)<DE> Extent=<ES>17:1 - 17:58<EE>
+<L>C:\Users\Usuario\Desktop\ELO312\Lab_2_2018\3.1\funciones.h:17:15: ParmDecl=x1|C:\Users\Usuario\Desktop\ELO312\Lab_2_2018\3.1\funciones.h:17:15 (Definition) <US>c:funciones.h@421@F@suma3@x1<UE> <DS>int<DE> Extent=<ES>17:11 - 17:17<EE>
+<L>C:\Users\Usuario\Desktop\ELO312\Lab_2_2018\3.1\funciones.h:17:23: ParmDecl=x2|C:\Users\Usuario\Desktop\ELO312\Lab_2_2018\3.1\funciones.h:17:23 (Definition) <US>c:funciones.h@429@F@suma3@x2<UE> <DS>int<DE> Extent=<ES>17:19 - 17:25<EE>
+<L>C:\Users\Usuario\Desktop\ELO312\Lab_2_2018\3.1\funciones.h:17:31: ParmDecl=x3|C:\Users\Usuario\Desktop\ELO312\Lab_2_2018\3.1\funciones.h:17:31 (Definition) <US>c:funciones.h@437@F@suma3@x3<UE> <DS>int<DE> Extent=<ES>17:27 - 17:33<EE>
+<L>C:\Users\Usuario\Desktop\ELO312\Lab_2_2018\3.1\funciones.h:17:39: ParmDecl=x4|C:\Users\Usuario\Desktop\ELO312\Lab_2_2018\3.1\funciones.h:17:39 (Definition) <US>c:funciones.h@445@F@suma3@x4<UE> <DS>int<DE> Extent=<ES>17:35 - 17:41<EE>
+<L>C:\Users\Usuario\Desktop\ELO312\Lab_2_2018\3.1\funciones.h:17:47: ParmDecl=x5|C:\Users\Usuario\Desktop\ELO312\Lab_2_2018\3.1\funciones.h:17:47 (Definition) <US>c:funciones.h@453@F@suma3@x5<UE> <DS>int<DE> Extent=<ES>17:43 - 17:49<EE>
+<L>C:\Users\Usuario\Desktop\ELO312\Lab_2_2018\3.1\funciones.h:17:55: ParmDecl=x6|C:\Users\Usuario\Desktop\ELO312\Lab_2_2018\3.1\funciones.h:17:55 (Definition) <US>c:funciones.h@461@F@suma3@x6<UE> <DS>int<DE> Extent=<ES>17:51 - 17:57<EE>
+<L>C:\Users\Usuario\Desktop\ELO312\Lab_2_2018\3.1\main.c:3:5: FunctionDecl=main|C:\Users\Usuario\Desktop\ELO312\Lab_2_2018\3.1\main.c:3:5 (Definition) <US>c:@F@main<UE> <DS>int main(void)<DE> Extent=<ES>3:1 - 9:2<EE>
+<L>C:\Users\Usuario\Desktop\ELO312\Lab_2_2018\3.1\main.c:4:1: CompoundStmt= <US><UE> <DS><DE> Extent=<ES>4:1 - 9:2<EE>
+<L>C:\Users\Usuario\Desktop\ELO312\Lab_2_2018\3.1\main.c:5:3: DeclStmt= <US><UE> <DS><DE> Extent=<ES>5:3 - 5:14<EE>
+<L>C:\Users\Usuario\Desktop\ELO312\Lab_2_2018\3.1\main.c:5:12: VarDecl=x|C:\Users\Usuario\Desktop\ELO312\Lab_2_2018\3.1\main.c:5:12 (Definition) <US>c:main.c@43@F@main@x<UE> <DS>x<DE> Extent=<ES>5:3 - 5:13<EE>
+<L>C:\Users\Usuario\Desktop\ELO312\Lab_2_2018\3.1\main.c:6:3: DeclStmt= <US><UE> <DS><DE> Extent=<ES>6:3 - 6:54<EE>
+<L>C:\Users\Usuario\Desktop\ELO312\Lab_2_2018\3.1\main.c:6:7: VarDecl=x1|C:\Users\Usuario\Desktop\ELO312\Lab_2_2018\3.1\main.c:6:7 (Definition) <US>c:main.c@58@F@main@x1<UE> <DS>x1<DE> Extent=<ES>6:3 - 6:13<EE>
+<L>C:\Users\Usuario\Desktop\ELO312\Lab_2_2018\3.1\main.c:6:12: IntegerLiteral= <US><UE> <DS><DE> Extent=<ES>6:12 - 6:13<EE>
+<L>C:\Users\Usuario\Desktop\ELO312\Lab_2_2018\3.1\main.c:6:15: VarDecl=x2|C:\Users\Usuario\Desktop\ELO312\Lab_2_2018\3.1\main.c:6:15 (Declaration) <US>c:main.c@58@F@main@x2<UE> <DS>x2<DE> Extent=<ES>6:15 - 6:21<EE>
+<L>C:\Users\Usuario\Desktop\ELO312\Lab_2_2018\3.1\main.c:6:20: IntegerLiteral= <US><UE> <DS><DE> Extent=<ES>6:20 - 6:21<EE>
+<L>C:\Users\Usuario\Desktop\ELO312\Lab_2_2018\3.1\main.c:6:23: VarDecl=x3|C:\Users\Usuario\Desktop\ELO312\Lab_2_2018\3.1\main.c:6:23 (Declaration) <US>c:main.c@58@F@main@x3<UE> <DS>x3<DE> Extent=<ES>6:23 - 6:29<EE>
+<L>C:\Users\Usuario\Desktop\ELO312\Lab_2_2018\3.1\main.c:6:28: IntegerLiteral= <US><UE> <DS><DE> Extent=<ES>6:28 - 6:29<EE>
+<L>C:\Users\Usuario\Desktop\ELO312\Lab_2_2018\3.1\main.c:6:31: VarDecl=x4|C:\Users\Usuario\Desktop\ELO312\Lab_2_2018\3.1\main.c:6:31 (Declaration) <US>c:main.c@58@F@main@x4<UE> <DS>x4<DE> Extent=<ES>6:31 - 6:37<EE>
+<L>C:\Users\Usuario\Desktop\ELO312\Lab_2_2018\3.1\main.c:6:36: IntegerLiteral= <US><UE> <DS><DE> Extent=<ES>6:36 - 6:37<EE>
+<L>C:\Users\Usuario\Desktop\ELO312\Lab_2_2018\3.1\main.c:6:39: VarDecl=x5|C:\Users\Usuario\Desktop\ELO312\Lab_2_2018\3.1\main.c:6:39 (Declaration) <US>c:main.c@58@F@main@x5<UE> <DS>x5<DE> Extent=<ES>6:39 - 6:45<EE>
+<L>C:\Users\Usuario\Desktop\ELO312\Lab_2_2018\3.1\main.c:6:44: IntegerLiteral= <US><UE> <DS><DE> Extent=<ES>6:44 - 6:45<EE>
+<L>C:\Users\Usuario\Desktop\ELO312\Lab_2_2018\3.1\main.c:6:47: VarDecl=x6|C:\Users\Usuario\Desktop\ELO312\Lab_2_2018\3.1\main.c:6:47 (Declaration) <US>c:main.c@58@F@main@x6<UE> <DS>x6<DE> Extent=<ES>6:47 - 6:53<EE>
+<L>C:\Users\Usuario\Desktop\ELO312\Lab_2_2018\3.1\main.c:6:52: IntegerLiteral= <US><UE> <DS><DE> Extent=<ES>6:52 - 6:53<EE>
+<L>C:\Users\Usuario\Desktop\ELO312\Lab_2_2018\3.1\main.c:7:3: BinaryOperator= <US><UE> <DS><DE> Extent=<ES>7:3 - 7:31<EE>
+<L>C:\Users\Usuario\Desktop\ELO312\Lab_2_2018\3.1\main.c:7:3: DeclRefExpr=x|C:\Users\Usuario\Desktop\ELO312\Lab_2_2018\3.1\main.c:5:12 (Reference) <US>c:main.c@43@F@main@x<UE> <DS>x<DE> Extent=<ES>7:3 - 7:4<EE>
+<L>C:\Users\Usuario\Desktop\ELO312\Lab_2_2018\3.1\main.c:7:7: UnexposedExpr=suma3|C:\Users\Usuario\Desktop\ELO312\Lab_2_2018\3.1\funciones.h:17:5 <US>c:@F@suma3<UE> <DS>int suma3(int, int, int, int, int, int)<DE> Extent=<ES>7:7 - 7:31<EE>
+<L>C:\Users\Usuario\Desktop\ELO312\Lab_2_2018\3.1\main.c:7:7: CallExpr=suma3|C:\Users\Usuario\Desktop\ELO312\Lab_2_2018\3.1\funciones.h:17:5 <US>c:@F@suma3<UE> <DS>int suma3(int, int, int, int, int, int)<DE> Extent=<ES>7:7 - 7:31<EE>
+<L>C:\Users\Usuario\Desktop\ELO312\Lab_2_2018\3.1\main.c:7:7: UnexposedExpr=suma3|C:\Users\Usuario\Desktop\ELO312\Lab_2_2018\3.1\funciones.h:17:5 <US>c:@F@suma3<UE> <DS>int suma3(int, int, int, int, int, int)<DE> Extent=<ES>7:7 - 7:12<EE>
+<L>C:\Users\Usuario\Desktop\ELO312\Lab_2_2018\3.1\main.c:7:7: DeclRefExpr=suma3|C:\Users\Usuario\Desktop\ELO312\Lab_2_2018\3.1\funciones.h:17:5 (Reference) <US>c:@F@suma3<UE> <DS>int suma3(int, int, int, int, int, int)<DE> Extent=<ES>7:7 - 7:12<EE>
+<L>C:\Users\Usuario\Desktop\ELO312\Lab_2_2018\3.1\main.c:7:13: UnexposedExpr=x1|C:\Users\Usuario\Desktop\ELO312\Lab_2_2018\3.1\main.c:6:7 <US>c:main.c@58@F@main@x1<UE> <DS>x1<DE> Extent=<ES>7:13 - 7:15<EE>
+<L>C:\Users\Usuario\Desktop\ELO312\Lab_2_2018\3.1\main.c:7:13: DeclRefExpr=x1|C:\Users\Usuario\Desktop\ELO312\Lab_2_2018\3.1\main.c:6:7 (Reference) <US>c:main.c@58@F@main@x1<UE> <DS>x1<DE> Extent=<ES>7:13 - 7:15<EE>
+<L>C:\Users\Usuario\Desktop\ELO312\Lab_2_2018\3.1\main.c:7:16: UnexposedExpr=x2|C:\Users\Usuario\Desktop\ELO312\Lab_2_2018\3.1\main.c:6:15 <US>c:main.c@58@F@main@x2<UE> <DS>x2<DE> Extent=<ES>7:16 - 7:18<EE>
+<L>C:\Users\Usuario\Desktop\ELO312\Lab_2_2018\3.1\main.c:7:16: DeclRefExpr=x2|C:\Users\Usuario\Desktop\ELO312\Lab_2_2018\3.1\main.c:6:15 (Reference) <US>c:main.c@58@F@main@x2<UE> <DS>x2<DE> Extent=<ES>7:16 - 7:18<EE>
+<L>C:\Users\Usuario\Desktop\ELO312\Lab_2_2018\3.1\main.c:7:19: UnexposedExpr=x3|C:\Users\Usuario\Desktop\ELO312\Lab_2_2018\3.1\main.c:6:23 <US>c:main.c@58@F@main@x3<UE> <DS>x3<DE> Extent=<ES>7:19 - 7:21<EE>
+<L>C:\Users\Usuario\Desktop\ELO312\Lab_2_2018\3.1\main.c:7:19: DeclRefExpr=x3|C:\Users\Usuario\Desktop\ELO312\Lab_2_2018\3.1\main.c:6:23 (Reference) <US>c:main.c@58@F@main@x3<UE> <DS>x3<DE> Extent=<ES>7:19 - 7:21<EE>
+<L>C:\Users\Usuario\Desktop\ELO312\Lab_2_2018\3.1\main.c:7:22: UnexposedExpr=x4|C:\Users\Usuario\Desktop\ELO312\Lab_2_2018\3.1\main.c:6:31 <US>c:main.c@58@F@main@x4<UE> <DS>x4<DE> Extent=<ES>7:22 - 7:24<EE>
+<L>C:\Users\Usuario\Desktop\ELO312\Lab_2_2018\3.1\main.c:7:22: DeclRefExpr=x4|C:\Users\Usuario\Desktop\ELO312\Lab_2_2018\3.1\main.c:6:31 (Reference) <US>c:main.c@58@F@main@x4<UE> <DS>x4<DE> Extent=<ES>7:22 - 7:24<EE>
+<L>C:\Users\Usuario\Desktop\ELO312\Lab_2_2018\3.1\main.c:7:25: UnexposedExpr=x5|C:\Users\Usuario\Desktop\ELO312\Lab_2_2018\3.1\main.c:6:39 <US>c:main.c@58@F@main@x5<UE> <DS>x5<DE> Extent=<ES>7:25 - 7:27<EE>
+<L>C:\Users\Usuario\Desktop\ELO312\Lab_2_2018\3.1\main.c:7:25: DeclRefExpr=x5|C:\Users\Usuario\Desktop\ELO312\Lab_2_2018\3.1\main.c:6:39 (Reference) <US>c:main.c@58@F@main@x5<UE> <DS>x5<DE> Extent=<ES>7:25 - 7:27<EE>
+<L>C:\Users\Usuario\Desktop\ELO312\Lab_2_2018\3.1\main.c:7:28: UnexposedExpr=x6|C:\Users\Usuario\Desktop\ELO312\Lab_2_2018\3.1\main.c:6:47 <US>c:main.c@58@F@main@x6<UE> <DS>x6<DE> Extent=<ES>7:28 - 7:30<EE>
+<L>C:\Users\Usuario\Desktop\ELO312\Lab_2_2018\3.1\main.c:7:28: DeclRefExpr=x6|C:\Users\Usuario\Desktop\ELO312\Lab_2_2018\3.1\main.c:6:47 (Reference) <US>c:main.c@58@F@main@x6<UE> <DS>x6<DE> Extent=<ES>7:28 - 7:30<EE>
+<L>C:\Users\Usuario\Desktop\ELO312\Lab_2_2018\3.1\main.c:8:3: ReturnStmt= <US><UE> <DS><DE> Extent=<ES>8:3 - 8:12<EE>
+<L>C:\Users\Usuario\Desktop\ELO312\Lab_2_2018\3.1\main.c:8:9: ParenExpr= <US><UE> <DS><DE> Extent=<ES>8:9 - 8:12<EE>
+<L>C:\Users\Usuario\Desktop\ELO312\Lab_2_2018\3.1\main.c:8:10: IntegerLiteral= <US><UE> <DS><DE> Extent=<ES>8:10 - 8:11<EE>

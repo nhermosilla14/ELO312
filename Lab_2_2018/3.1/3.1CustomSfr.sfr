@@ -10,8 +10,6 @@ sfr = "ADC12MCTL15",	"Memory",	0x8f,	1,	base=16,	modified
 sfr = "DAC12_0CTL",	"Memory",	0x1c0,	2,	base=16,	modified
 sfr = "DAC12_1CTL",	"Memory",	0x1c2,	2,	base=16,	modified
 sfr = "DMA0DA",	"Memory",	0x1e4,	2,	base=16,	modified
-sfr = "TBCCTL4.CAP",	"Memory",	0x18a,	2,	base=16,	modified
-sfr = "DMA1CTL.DMASRCBYTE",	"Memory",	0x1e8,	2,	base=16,	modified
 
 
 [SfrGroupInfo]

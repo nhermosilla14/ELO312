@@ -9,26 +9,11 @@ TriggerName=main
 LimitSize=0
 ByteLimit=50
 [DebugChecksum]
-Checksum=-913289758
+Checksum=1882334280
 [CallStack]
 ShowArgs=0
 [Disassembly]
 MixedMode=1
-[Log file]
-LoggingEnabled=_ 0
-LogFile=_ ""
-Category=_ 0
-[TermIOLog]
-LoggingEnabled=_ 0
-LogFile=_ ""
-[CallStackLog]
-Enabled=0
-[DriverProfiling]
-Enabled=0
-Mode=1
-Graph=0
-Symbiont=0
-Exclusions=
 [InterruptLog]
 LogEnabled=0
 SumEnabled=0
@@ -44,12 +29,17 @@ ShowTimeLog=1
 ShowTimeSum=1
 [Breakpoints2]
 Bp0=_ 0 "STD_CODE2" "Memory:0x252E" 0 0 1 "" 0 ""
-Bp1=_ 1 "STD_CODE2" "Memory:0x251A" 0 0 1 "" 0 ""
-Bp2=_ 1 "STD_CODE2" "Memory:0x2530" 0 0 1 "" 0 ""
-Bp3=_ 1 "STD_CODE2" "Memory:0x253A" 0 0 1 "" 0 ""
-Bp4=_ 1 "STD_CODE2" "Memory:0x2534" 0 0 1 "" 0 ""
-Bp5=_ 1 "STD_CODE2" "Memory:0x253E" 0 0 1 "" 0 ""
-Count=6
+Bp1=_ 0 "STD_CODE2" "Memory:0x251A" 0 0 1 "" 0 ""
+Bp2=_ 0 "STD_CODE2" "Memory:0x2530" 0 0 1 "" 0 ""
+Bp3=_ 0 "STD_CODE2" "Memory:0x253A" 0 0 1 "" 0 ""
+Bp4=_ 0 "STD_CODE2" "Memory:0x2534" 0 0 1 "" 0 ""
+Bp5=_ 0 "STD_CODE2" "Memory:0x253E" 0 0 1 "" 0 ""
+Bp6=_ 0 "STD_CODE2" "Memory:0x2546" 0 0 1 "" 0 ""
+Bp7=_ 0 "STD_CODE2" "Memory:0x2548" 0 0 1 "" 0 ""
+Bp8=_ 0 "STD_CODE2" "Memory:0x254A" 0 0 1 "" 0 ""
+Bp9=_ 0 "STD_CODE2" "Memory:0x255A" 0 0 1 "" 0 ""
+Bp10=_ 0 "STD_CODE2" "Memory:0x255E" 0 0 1 "" 0 ""
+Count=11
 [Interrupts]
 Enabled=1
 [MemoryMap]
@@ -59,9 +49,26 @@ UseAuto=0
 TypeViolation=1
 UnspecRange=1
 ActionState=1
+[Log file]
+LoggingEnabled=_ 0
+LogFile=_ ""
+Category=_ 0
+[TermIOLog]
+LoggingEnabled=_ 0
+LogFile=_ ""
 [Aliases]
-Count=0
+A0=_ "D:\Users\Nicolás\Desktop\ELO312\Lab_2_2018\3.1\funciones.c" ""
+A1=_ "D:\Users\Nicolás\Desktop\ELO312\Lab_2_2018\3.1\main.c" "C:\Users\Usuario\Desktop\ELO312\Lab_2_2018\3.1\main.c"
+Count=2
 SuppressDialog=0
 [Trace1]
 Enabled=0
 ShowSource=1
+[CallStackLog]
+Enabled=0
+[DriverProfiling]
+Enabled=0
+Mode=1
+Graph=0
+Symbiont=0
+Exclusions=
