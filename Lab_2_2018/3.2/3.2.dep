@@ -8,37 +8,31 @@
     <outputs>
       <file>$TOOLKIT_DIR$\config\multiplier.xcl</file>
       <file>$TOOLKIT_DIR$\config\lnk430F1612.xcl</file>
-      <file>$PROJ_DIR$\Debug\Exe\3.2.d43</file>
       <file>$PROJ_DIR$\Debug\Obj\prog2_2.r43</file>
       <file>$PROJ_DIR$\prog2_2.asm</file>
-      <file>$PROJ_DIR$\Debug\Obj\asm.r43</file>
-      <file>$TOOLKIT_DIR$\inc\msp430x16x.h</file>
+      <file>$PROJ_DIR$\Debug\Exe\3.2.d43</file>
       <file>$PROJ_DIR$\asm.s43</file>
+      <file>$TOOLKIT_DIR$\inc\msp430x16x.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\asm.r43</file>
+      <file>$PROJ_DIR$\..\3.1\main.c</file>
+      <file>$PROJ_DIR$\..\3.1\funciones.c</file>
+      <file>$PROJ_DIR$\..\2.1.2\prog2_2.asm</file>
     </outputs>
     <file>
       <name>[ROOT_NODE]</name>
       <outputs>
         <tool>
           <name>XLINK</name>
-          <file> 2</file>
+          <file> 4</file>
         </tool>
       </outputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\Debug\Exe\3.2.d43</name>
-      <inputs>
-        <tool>
-          <name>XLINK</name>
-          <file> 1 0 3</file>
-        </tool>
-      </inputs>
     </file>
     <file>
       <name>$PROJ_DIR$\prog2_2.asm</name>
       <outputs>
         <tool>
           <name>A430</name>
-          <file> 3</file>
+          <file> 2</file>
         </tool>
       </outputs>
       <inputs>
@@ -49,11 +43,20 @@
       </inputs>
     </file>
     <file>
+      <name>$PROJ_DIR$\Debug\Exe\3.2.d43</name>
+      <inputs>
+        <tool>
+          <name>XLINK</name>
+          <file> 1 0 2</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
       <name>$PROJ_DIR$\asm.s43</name>
       <outputs>
         <tool>
           <name>A430</name>
-          <file> 5</file>
+          <file> 7</file>
         </tool>
       </outputs>
     </file>

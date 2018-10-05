@@ -1,12 +1,9 @@
 [Sfr]
-sfr = "TBCCR5",	"Memory",	0x19c,	2,	base=16,	modified
-sfr = "I2CDCTL.I2CTXUDF",	"Memory",	0x72,	1,	base=16,	modified
 sfr = "I2COA",	"Memory",	0x118,	2,	base=16,	modified
-sfr = "TACCTL0.CCIFG",	"Memory",	0x162,	2,	base=16,	modified
-sfr = "TACCTL2.CCIFG",	"Memory",	0x166,	2,	base=16,	modified
-sfr = "DMA2CTL.DMAIE",	"Memory",	0x1f0,	2,	base=16,	modified
-sfr = "DMA2CTL.DMADT2",	"Memory",	0x1f0,	2,	base=16,	modified
+sfr = "TBCCR5",	"Memory",	0x19c,	2,	base=16,	modified
+sfr = "TBCTL.MC1",	"Memory",	0x180,	2,	base=16,	modified
+sfr = "CACTL1.CAREF0",	"Memory",	0x59,	1,	base=16,	modified
 
 
 [SfrGroupInfo]
-group = "Custom", "TBCCR5"
+group = "Custom", "I2COA", "TBCCR5"

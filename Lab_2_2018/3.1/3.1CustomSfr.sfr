@@ -1,14 +1,21 @@
 [Sfr]
+sfr = "ME1",	"Memory",	0x4,	1,	base=16,	modified
 sfr = "I2CDRB",	"Memory",	0x76,	1,	base=16,	modified
 sfr = "TACCR1",	"Memory",	0x174,	2,	base=16,	modified
-sfr = "DAC12_1CTL",	"Memory",	0x1c2,	2,	base=16,	modified
-sfr = "DMA0DA",	"Memory",	0x1e4,	2,	base=16,	modified
-sfr = "ADC12CTL1.CONSEQ1",	"Memory",	0x1a2,	2,	base=16,	modified
-sfr = "ADC12MCTL11.SREF0",	"Memory",	0x8b,	1,	base=16,	modified
+sfr = "ADC12MEM6",	"Memory",	0x14c,	2,	base=16,	modified
+sfr = "ADC12MEM12",	"Memory",	0x158,	2,	base=16,	modified
+sfr = "ADC12MCTL5",	"Memory",	0x85,	1,	base=16,	modified
+sfr = "ADC12MCTL6",	"Memory",	0x86,	1,	base=16,	modified
 sfr = "ADC12MCTL15",	"Memory",	0x8f,	1,	base=16,	modified
 sfr = "DAC12_0CTL",	"Memory",	0x1c0,	2,	base=16,	modified
+sfr = "DAC12_1CTL",	"Memory",	0x1c2,	2,	base=16,	modified
+sfr = "DMA0DA",	"Memory",	0x1e4,	2,	base=16,	modified
+sfr = "TBCCTL4.CAP",	"Memory",	0x18a,	2,	base=16,	modified
+sfr = "DMA1CTL.DMASRCBYTE",	"Memory",	0x1e8,	2,	base=16,	modified
 
 
 [SfrGroupInfo]
-group = "Custom", "I2CDRB"
-group = "Custom", "TACCR1", "DAC12_1CTL", "DMA0DA"
+group = "Custom", "ME1", "I2CDRB", "TACCR1"
+group = "Custom", "ADC12MEM6"
+group = "Custom", "ADC12MEM12", "ADC12MCTL5", "ADC12MCTL6", "ADC12MCTL15", "DAC12_0CTL", "DAC12_1CTL"
+group = "Custom", "DMA0DA"
