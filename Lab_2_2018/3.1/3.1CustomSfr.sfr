@@ -1,0 +1,14 @@
+[Sfr]
+sfr = "I2CDRB",	"Memory",	0x76,	1,	base=16,	modified
+sfr = "TACCR1",	"Memory",	0x174,	2,	base=16,	modified
+sfr = "DAC12_1CTL",	"Memory",	0x1c2,	2,	base=16,	modified
+sfr = "DMA0DA",	"Memory",	0x1e4,	2,	base=16,	modified
+sfr = "ADC12CTL1.CONSEQ1",	"Memory",	0x1a2,	2,	base=16,	modified
+sfr = "ADC12MCTL11.SREF0",	"Memory",	0x8b,	1,	base=16,	modified
+sfr = "ADC12MCTL15",	"Memory",	0x8f,	1,	base=16,	modified
+sfr = "DAC12_0CTL",	"Memory",	0x1c0,	2,	base=16,	modified
+
+
+[SfrGroupInfo]
+group = "Custom", "I2CDRB"
+group = "Custom", "TACCR1", "DAC12_1CTL", "DMA0DA"

@@ -1,0 +1,12 @@
+[Sfr]
+sfr = "CACTL1",	"Memory",	0x59,	1,	base=16,	modified
+sfr = "DMA1CTL",	"Memory",	0x1e8,	2,	base=16,	modified
+sfr = "DMA2CTL",	"Memory",	0x1f0,	2,	base=16,	modified
+sfr = "DMA1DA",	"Memory",	0x1ec,	2,	base=16,	modified
+sfr = "DMA2SA",	"Memory",	0x1f2,	2,	base=16,	modified
+sfr = "TBCTL.ID0",	"Memory",	0x180,	2,	base=16,	modified
+
+
+[SfrGroupInfo]
+group = "Custom", "CACTL1", "DMA1CTL"
+group = "Custom", "DMA2CTL", "DMA1DA", "DMA2SA"
