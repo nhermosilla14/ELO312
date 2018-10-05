@@ -7,13 +7,16 @@ main
                 ORG	0x2500				; Dirección de inicio del programa
 ;-------------------------------------------------------------------------------
 RESET	        MOV	#SPinit,SP      	; Inicio del Stack
-                MOV     #0xF,COUNTER
-LOOP            PUSH    #0x81
-                DEC     COUNTER
-                JNZ     LOOP
-                BR      #EXIT			;
+                MOV     #0xF,COUNTER            ; Inicialización del contador
+                
+LOOP            PUSH    #0x81                   ; Añade el valor 0x81 al stack
+                DEC     COUNTER                 ; Disminuye el contador en 1
+                
+                JNZ     LOOP                    ; Si aun no vale cero el
+                BR      #EXIT			; contador, sigue haciendo lo
+                                                ; mismo.
 ;-------------------------------------------------------------------------------
-EXIT            JMP     EXIT            ; ¿Qué realiza esta instrucción?
+EXIT            JMP     EXIT            ;
 ;------------------------------------------------------------------------------ 
 ; Vector de interrupción asociado a Reset 
 ;------------------------------------------------------------------------------ 
