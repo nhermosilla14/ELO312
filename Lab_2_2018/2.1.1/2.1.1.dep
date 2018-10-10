@@ -6,21 +6,21 @@
   <configuration>
     <name>Debug</name>
     <outputs>
-      <file>$TOOLKIT_DIR$\inc\dlib\c\ystdio.h</file>
+      <file>$TOOLKIT_DIR$\inc\dlib\c\DLib_Product.h</file>
+      <file>$TOOLKIT_DIR$\inc\dlib\c\DLib_Threads.h</file>
+      <file>$TOOLKIT_DIR$\inc\dlib\c\yvals.h</file>
       <file>$TOOLKIT_DIR$\config\lnk430.xcl</file>
       <file>$PROJ_DIR$\Debug\Exe\2.1.1.d43</file>
       <file>$TOOLKIT_DIR$\config\multiplier.xcl</file>
-      <file>$TOOLKIT_DIR$\inc\dlib\c\yvals.h</file>
       <file>$TOOLKIT_DIR$\lib\dlib\dl430fn.h</file>
-      <file>$TOOLKIT_DIR$\inc\dlib\c\DLib_Threads.h</file>
+      <file>$TOOLKIT_DIR$\inc\dlib\c\ystdio.h</file>
       <file>$TOOLKIT_DIR$\lib\dlib\dl430fn.r43</file>
       <file>$TOOLKIT_DIR$\inc\dlib\c\ysizet.h</file>
       <file>$TOOLKIT_DIR$\inc\dlib\c\xencoding_limits.h</file>
-      <file>$TOOLKIT_DIR$\inc\dlib\c\DLib_Product.h</file>
-      <file>$TOOLKIT_DIR$\inc\dlib\c\ycheck.h</file>
-      <file>$PROJ_DIR$\Debug\Obj\prog2_1.r43</file>
-      <file>$TOOLKIT_DIR$\inc\dlib\c\stdio.h</file>
       <file>$PROJ_DIR$\prog2_1.c</file>
+      <file>$TOOLKIT_DIR$\inc\dlib\c\stdio.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\prog2_1.r43</file>
+      <file>$TOOLKIT_DIR$\inc\dlib\c\ycheck.h</file>
       <file>$TOOLKIT_DIR$\inc\dlib\c\DLib_Defaults.h</file>
     </outputs>
     <file>
@@ -28,7 +28,7 @@
       <inputs>
         <tool>
           <name>XLINK</name>
-          <file> 1 3 12 7</file>
+          <file> 3 5 13 8</file>
         </tool>
       </inputs>
     </file>
@@ -37,11 +37,11 @@
       <inputs>
         <tool>
           <name>ICC430</name>
-          <file> 13 11 4 15 5 10 9 6 8 0</file>
+          <file> 12 14 2 15 6 0 10 1 9 7</file>
         </tool>
         <tool>
           <name>BICOMP</name>
-          <file> 13 11 4 15 5 10 9 6 8 0</file>
+          <file> 12 14 2 15 6 0 10 1 9 7</file>
         </tool>
       </inputs>
     </file>

@@ -16,6 +16,9 @@
   <project>
     <path>$WS_DIR$\3.2\3.2.ewp</path>
   </project>
+  <project>
+    <path>$WS_DIR$\3.3\3.3.ewp</path>
+  </project>
   <batchBuild/>
 </workspace>
 
