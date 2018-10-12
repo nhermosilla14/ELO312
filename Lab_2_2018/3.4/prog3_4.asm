@@ -42,29 +42,32 @@ FUNCION         BIS.B   #01h,&P1DIR
                 BIS.B   #01h,&P2DIR
                 BIS.B   #00h,&P2SEL
                 PUSH    R10                     ; Respalda R10 en el stack
-                PUSH    COUNTER_ADDR            ; Respalda COUNTER_ADDR en el stack
+
+;                PUSH    COUNTER_ADDR            ; Respalda COUNTER_ADDR en el stack
+                PUSH    R12
                 PUSH    COUNTER_LOOP            ; Respalda COUNTER_LOOP en el stack
-                MOV     #0x0,COUNTER_ADDR       ; Inicializa en 0 COUNTER_ADDR
                 MOV     R14,COUNTER_LOOP        ; Inicializa en el valor dado el
                 DEC     COUNTER_LOOP                                 ; COUNTER_LOOP
 LOOP2           BIC.B   #10h,&P1OUT
                 CLR.B   &P2OUT
-                MOV     R13,R15                 ; COPIA R13 a R15, para operar en R15
-                ADD     COUNTER_ADDR,R15        ; SUMA COUNTER_ADDR a R15
-                MOV.B     @R15,R10                ; Rescata el valor de @R15 en R10
-                MOV     R12,R15                 ; Reusamos R15 para seguir operando
-                ADD     COUNTER_ADDR, R15  
-                BIS.B   #10h,&P1OUT     
-                MOV.B     R10,0x0(R15)            ; Copia el valor guardado a la
-                CMP.B   #00h,R10
-                JEQ     CONTINUE
-                MOV.B   R10,&P2OUT
-CONTINUE        INC     COUNTER_ADDR            ; nueva dirección.           ;
+                
+PAUSA           MOV.B   &P1IN,R10
+                AND.B   #01h,R10
+                CMP.B   #01h,R10
+                JEQ     PAUSA
+           
+                CMP.B   0x0(R13),00h
+                JEQ     CONTINUA
+                MOV.B   R12,&P2OUT
+CONTINUA        MOV.B   @R13+,0x0(R12)                ; COPIA R13 a R15, para operar en R15
+                INC     R12
+                BIS.B   #10h,&P1OUT    
                 DEC     COUNTER_LOOP            ; Sube el contador de addr, baja
                 JNZ     LOOP2                   ; el del LOOP.
-                MOV     R12,R12                 ; Valor de retorno a R12
+                
+                
                 POP     COUNTER_LOOP            ; Restituye los valores respaldados
-                POP     COUNTER_ADDR            ; en el stack.
+                POP     R12                     ; en el stack.
                 POP     R10                     
                 RET
                 

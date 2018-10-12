@@ -6,37 +6,13 @@
   <configuration>
     <name>Debug</name>
     <outputs>
-      <file>$PROJ_DIR$\prog3_2.asm</file>
-      <file>$TOOLKIT_DIR$\config\lnk430F1612.xcl</file>
-      <file>$TOOLKIT_DIR$\inc\msp430x16x.h</file>
-      <file>$PROJ_DIR$\Debug\Exe\3.2.d43</file>
-      <file>$TOOLKIT_DIR$\config\multiplier.xcl</file>
       <file>$PROJ_DIR$\Debug\Obj\prog3_2.r43</file>
+      <file>$TOOLKIT_DIR$\inc\msp430x16x.h</file>
+      <file>$TOOLKIT_DIR$\config\lnk430F1612.xcl</file>
+      <file>$PROJ_DIR$\Debug\Exe\3.2.d43</file>
+      <file>$PROJ_DIR$\prog3_2.asm</file>
+      <file>$TOOLKIT_DIR$\config\multiplier.xcl</file>
     </outputs>
-    <file>
-      <name>$PROJ_DIR$\prog3_2.asm</name>
-      <outputs>
-        <tool>
-          <name>A430</name>
-          <file> 5</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>A430</name>
-          <file> 2</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\Debug\Exe\3.2.d43</name>
-      <inputs>
-        <tool>
-          <name>XLINK</name>
-          <file> 1 4 5</file>
-        </tool>
-      </inputs>
-    </file>
     <file>
       <name>[ROOT_NODE]</name>
       <outputs>
@@ -45,6 +21,30 @@
           <file> 3</file>
         </tool>
       </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\Debug\Exe\3.2.d43</name>
+      <inputs>
+        <tool>
+          <name>XLINK</name>
+          <file> 2 5 0</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\prog3_2.asm</name>
+      <outputs>
+        <tool>
+          <name>A430</name>
+          <file> 0</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>A430</name>
+          <file> 1</file>
+        </tool>
+      </inputs>
     </file>
   </configuration>
   <configuration>

@@ -6,20 +6,19 @@
   <configuration>
     <name>Debug</name>
     <outputs>
-      <file>$TOOLKIT_DIR$\config\lnk430F1612.xcl</file>
-      <file>$TOOLKIT_DIR$\inc\msp430x16x.h</file>
-      <file>$TOOLKIT_DIR$\config\multiplier.xcl</file>
       <file>$PROJ_DIR$\Debug\Obj\prog3_4.r43</file>
-      <file>$PROJ_DIR$\..\3.3\prog3_3.asm</file>
       <file>$PROJ_DIR$\Debug\Exe\3.4.d43</file>
+      <file>$TOOLKIT_DIR$\config\multiplier.xcl</file>
+      <file>$TOOLKIT_DIR$\config\lnk430F1612.xcl</file>
       <file>$PROJ_DIR$\prog3_4.asm</file>
+      <file>$TOOLKIT_DIR$\inc\msp430x16x.h</file>
     </outputs>
     <file>
       <name>[ROOT_NODE]</name>
       <outputs>
         <tool>
           <name>XLINK</name>
-          <file> 5</file>
+          <file> 1</file>
         </tool>
       </outputs>
     </file>
@@ -28,7 +27,7 @@
       <inputs>
         <tool>
           <name>XLINK</name>
-          <file> 0 2 3</file>
+          <file> 3 2 0</file>
         </tool>
       </inputs>
     </file>
@@ -37,13 +36,13 @@
       <outputs>
         <tool>
           <name>A430</name>
-          <file> 3</file>
+          <file> 0</file>
         </tool>
       </outputs>
       <inputs>
         <tool>
           <name>A430</name>
-          <file> 1</file>
+          <file> 5</file>
         </tool>
       </inputs>
     </file>
