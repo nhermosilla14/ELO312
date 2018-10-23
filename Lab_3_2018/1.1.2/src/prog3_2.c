@@ -8,7 +8,7 @@ void main(void)
 	TACCTL0 = CCIE;			// TACCR0 habilita interrupción del timer
 	TACCR0 = 500;
 	TACTL = TASSEL_2 + MC_1; 	// reloj de subsistema, modo up
-	_BIS_SR(LPM0_bits + GIE); 	// modo bajo consumo e interrupciones
+	_BIS_SR(GIE); 	// modo bajo consumo e interrupciones
 }
 
 // Timer A0 rutina de servicio de interrupción
