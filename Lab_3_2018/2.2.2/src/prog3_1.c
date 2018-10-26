@@ -1,6 +1,10 @@
 #include  "msp430_version.h"
-#define MAX 50
- 
+#define MAX 500
+/***************************************
+ * Frecuencia de salida 10 veces menor *
+ * ajustada subiendo el MAX (contador  *
+ * para el soft delay).                *
+ ***************************************/
 void main(void) 
 {  
 	WDTCTL = WDTPW + WDTHOLD;  	// Detiene el timer watchdog  

@@ -1947,6 +1947,9 @@
     </settings>
   </configuration>
   <file>
+    <name>$PROJ_DIR$\src\funciones.c</name>
+  </file>
+  <file>
     <name>$PROJ_DIR$\src\osc.c</name>
   </file>
   <file>
