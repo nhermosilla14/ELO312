@@ -101,6 +101,8 @@ unsigned char display_wait_BF(void)
 	unsigned char add;
         unsigned char db;
         do {
+          SET_BIT(LCD_RW);
+          RST_BIT(LCD_RS);
           LCD_READ(db);
           add = DB & 0x7F;
         } while ( DB & 0x80);
