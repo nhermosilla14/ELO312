@@ -452,7 +452,17 @@ void display_lcd_scroll_up(void)
 **************************************************/
 const char new_char0[]={BIT2,BIT3+BIT1,BIT2,BIT4+BIT3+BIT2+BIT1+BIT0,BIT2,BIT3+BIT1,BIT3+BIT1,BIT4+BIT3+BIT1+BIT0};
 
-const char new_char1[]={BIT2,BIT3+BIT1,BIT2,BIT4+BIT3+BIT2+BIT1+BIT0,BIT2,BIT3+BIT1,BIT3+BIT1,BIT4+BIT3+BIT1+BIT0};
+const char new_char1[]={0x0,0x0,0x0,0x0,0x0,BIT2,BIT3+BIT1,BIT4+BIT2+BIT0};
+
+const char new_char2[]={0x0,0x0,0x0,BIT2,0x0,BIT2,BIT3+BIT1,BIT4+BIT2+BIT0};
+
+const char new_char3[]={0x0,BIT2,0x0,BIT2,0x0,BIT2,BIT3+BIT1,BIT4+BIT2+BIT0};
+
+const char new_char4[]={BIT2,0x0,BIT2,0x0,0x0,BIT2,BIT3+BIT1,BIT4+BIT2+BIT0};
+
+const char new_char5[]={0x0,BIT2,0x0,0x0,0x0,BIT2,BIT3+BIT1,BIT4+BIT2+BIT0};
+
+const char new_char6[]={BIT2,0x0,0x0,0x0,0x0,BIT2,BIT3+BIT1,BIT4+BIT2+BIT0};
 
 void display_test_Write_CGRAM_MS(void)
 {
