@@ -451,6 +451,9 @@ void display_lcd_scroll_up(void)
 * un caracter nuevo ... un robot.
 **************************************************/
 const char new_char0[]={BIT2,BIT3+BIT1,BIT2,BIT4+BIT3+BIT2+BIT1+BIT0,BIT2,BIT3+BIT1,BIT3+BIT1,BIT4+BIT3+BIT1+BIT0};
+
+const char new_char1[]={BIT2,BIT3+BIT1,BIT2,BIT4+BIT3+BIT2+BIT1+BIT0,BIT2,BIT3+BIT1,BIT3+BIT1,BIT4+BIT3+BIT1+BIT0};
+
 void display_test_Write_CGRAM_MS(void)
 {
 	int i=0;

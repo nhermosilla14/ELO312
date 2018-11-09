@@ -4,6 +4,9 @@
   <project>
     <path>$WS_DIR$\1.1.1\1.1.1.ewp</path>
   </project>
+  <project>
+    <path>$WS_DIR$\1.1.2\1.1.2.ewp</path>
+  </project>
   <batchBuild/>
 </workspace>
 
