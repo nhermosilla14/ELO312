@@ -5,7 +5,7 @@
 * Laboratorio de Estructura de Computadores
 * del departamento de Electrónica de la Universidad
 * Técnica Federico Santa María. El uso o copia
-* está permitido y se agracede mantener el nombre 
+* está permitido y se agracede mantener el nombre
 * de los creadores.
 *
 * Escrito inicialmente el 01/01/2004 Por Michael Kusch & Wolfgang Freund
@@ -26,12 +26,12 @@
 *
 ***************************************************/
 #define LCD_PORT_INIT   {LDSEL = 0x0; LCDIR |= (LCD_RS + LCD_RW + LCD_E); LCSEL &= ~(LCD_RS + LCD_RW + LCD_E);}
-#define LCD_READ(x)     {SET_BIT(LCD_E); LCD_PDELAY; (x) = LDIN; RST_BIT(LCD_E); LCD_PDELAY;} 
+#define LCD_READ(x)     {SET_BIT(LCD_E); LCD_PDELAY; (x) = LDIN; RST_BIT(LCD_E); LCD_PDELAY;}
 #define LCD_WRITE(x)    {LDDIR = 0xff; LDOUT = x; LCD_ENABLE(); LDDIR = 0;}
 
 #define LCD_PDELAY      {asm("NOP"); asm("NOP"); asm("NOP"); asm("NOP");}
 
-#define SET_BIT(x)      (LCOUT |= (x))   
+#define SET_BIT(x)      (LCOUT |= (x))
 #define RST_BIT(x)      (LCOUT &= ~(x))
 
 #define LCD_ENABLE()    {SET_BIT(LCD_E); LCD_PDELAY; RST_BIT(LCD_E);}
@@ -63,10 +63,10 @@ void display_lcd_scroll_up(void);
 /**************************************************
 * Nombre    		: void udelay(unsigned int arg1)
 * returns			: void
-* arg1				: Cantidad de microsegundos 
+* arg1				: Cantidad de microsegundos
 * Creada por		: Michael Kusch
 * Fecha creación	: 01/01/2004
-* Descripción		: Hace un retardo de arg1 
+* Descripción		: Hace un retardo de arg1
 * microsegundos
 **************************************************/
 void udelay(unsigned int x)
@@ -105,7 +105,7 @@ unsigned char display_wait_BF(void)
           add = DB & 0x7F;
         } while ( DB & 0x80);
 	/*udelay(120); // solucion parche!! */
-        
+
 	return add;
 }
 
@@ -131,8 +131,8 @@ void display_clear(void)
 * returns			: void
 * Creada por		: Mauricio Solís
 * Fecha creación	: 19/09/2014
-* Descripción		: Corre el "visor" del display en un 
-* caracter hacia la derecha 
+* Descripción		: Corre el "visor" del display en un
+* caracter hacia la derecha
 **************************************************/
 void display_right_shift(void)
 {
@@ -147,8 +147,8 @@ void display_right_shift(void)
 * returns			: void
 * Creada por		: Mauricio Solís
 * Fecha creación	: 19/09/2014
-* Descripción		: Corre el "visor" del display en un 
-* caracter hacia la izquierda 
+* Descripción		: Corre el "visor" del display en un
+* caracter hacia la izquierda
 **************************************************/
 void display_left_shift(void)
 {
@@ -165,7 +165,7 @@ void display_left_shift(void)
 * Creada por		: Mauricio Solís
 * Fecha creación	: 19/09/2014
 * Descripción		: Escribe en el display un nuevo caracter arg2, en la dirección
-* arg1 
+* arg1
 **************************************************/
 void display_new_character(int pos, char* data)
 {
@@ -231,7 +231,7 @@ void display_init(void)
 
 	LCD_WRITE(0x30);
 	udelay(500);
-	
+
 	LCD_WRITE(0x30);
 	udelay(120);
 
@@ -272,20 +272,20 @@ void display_set_pos(unsigned char add)
 * Descripción		: Entrega la dirección de una determinada línea
 * en el display.
 * dado una línea (0, 1, etc) retorna la dirección de memoria
-**************************************************/ 
+**************************************************/
 unsigned char display_lcd_addr(int line)
 {
 	switch (LCD_LINES)
 	{
 	case 2:
 		return (line > 0) ? 0x40 : 0x0;
-	
+
 	case 4:
 		if (line == 0) return 0x0;
 		else if (line == 1) return 0x40;
 		else if (line == 2) return LCD_WIDTH;
 		return (0x40 + LCD_WIDTH);
-	
+
 	default: return 0;
 	}
 }
@@ -297,10 +297,10 @@ unsigned char display_lcd_addr(int line)
 * Creada por		: Michael Kusch
 * Fecha creación	: 01/01/2004
 * Descripción		: Envía un comando al display
-**************************************************/ 
+**************************************************/
 void display_send_cmd(unsigned char value)
 {
-	display_wait_BF(); 
+	display_wait_BF();
 	RST_BIT(LCD_RS + LCD_RW);
 	LCD_WRITE(value);
 }
@@ -312,10 +312,10 @@ void display_send_cmd(unsigned char value)
 * Creada por		: Michael Kusch
 * Fecha creación	: 01/01/2004
 * Descripción		: Envía un dato al display
-**************************************************/ 
+**************************************************/
 void display_send_data(char value)
 {
-	display_wait_BF(); 
+	display_wait_BF();
 	SET_BIT(LCD_RS); RST_BIT(LCD_RW);
 	LCD_WRITE(value);
 }
@@ -328,31 +328,36 @@ void display_send_data(char value)
 * Fecha creación	: 01/01/2004
 * Descripción		: Maneja los caracteres que "envía"
 * la función printf de la biblioteca stdio
-**************************************************/ 
+**************************************************/
 int putchar(int c)
 {
 	int line;
-
+    unsigned char pos;
 	if (c == '\n')
 	{
-        // fill in, lcd_scroll_up() ??
+        display_lcd_scroll_up();
 		return c;
 	}
-    
+
 	if (c == '\r')
 	{
-		// fill in, mueve cursor al comienzo de línea
+		display_set_pos(0);
 		return c;
 	}
 
 	if (c == '\t')
 	{
-		// fill in, tabulación 4 espacios
+		pos = display_get_pos();
+		pos %= 4;
+		display_set_pos(4 - pos);
 		return c;
 	}
 	if( c== '\b')
 	{
-		// fill in, backspace
+		pos = display_get_pos();
+		if (pos > 0)
+            display_set_pos(pos - 1);
+        return c;
 	}
 
 	display_send_data((unsigned char) c);
@@ -366,13 +371,13 @@ int putchar(int c)
 * Creada por		: Michael Kusch
 * Fecha creación	: 01/01/2004
 * Descripción		: Dada una dirección retorna el número de línea
-**************************************************/ 
+**************************************************/
 int display_lcd_line(unsigned char addr)
 {
 	int line;
 
 	for (line = 0; line < LCD_LINES; line++)
-		if (addr >= display_lcd_addr(line) && 
+		if (addr >= display_lcd_addr(line) &&
 			addr < display_lcd_addr(line) + LCD_WIDTH)
 			return line;
 	return -1;
@@ -386,7 +391,7 @@ int display_lcd_line(unsigned char addr)
 * Creada por		: Michael Kusch
 * Fecha creación	: 01/01/2004
 * Descripción		: Limpia - arg2 - caracteres desde arg1
-**************************************************/ 
+**************************************************/
 void display_lcd_clear(int from, int len)
 {
 	int i;
@@ -467,7 +472,7 @@ const char new_char6[]={BIT2,0x0,0x0,0x0,0x0,BIT2,BIT3+BIT1,BIT4+BIT2+BIT0};
 void display_test_Write_CGRAM_MS(void)
 {
 	int i=0;
-	int x=1; 
+	int x=1;
 	display_send_cmd(0x40+(x<<3));//set CG RAM Address
 	for(i=0; i<8; i++)
 	{
