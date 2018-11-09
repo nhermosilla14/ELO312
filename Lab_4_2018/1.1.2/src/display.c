@@ -455,7 +455,8 @@ void display_lcd_scroll_up(void)
 * Creada por		: Mauricio Solís
 * Fecha creación	: 20/09/2014
 * Descripción		: Escribe en la memoria CGRAM
-* un caracter nuevo ... un robot.
+* un caracter nuevo ... un robot.SET_BIT(LCD_RW);
+	RST_BIT(LCD_RS);
 **************************************************/
 const char new_char0[]={BIT2,BIT3+BIT1,BIT2,BIT4+BIT3+BIT2+BIT1+BIT0,BIT2,BIT3+BIT1,BIT3+BIT1,BIT4+BIT3+BIT1+BIT0};
 
