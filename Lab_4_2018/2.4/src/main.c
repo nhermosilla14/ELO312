@@ -6,17 +6,14 @@
 int line = 0;
 int sec = 0;
 
-const char new_char1[]={0x0,0x0,0x0,0x0,0x0,BIT2,BIT3+BIT1,BIT4+BIT2+BIT0};
-
-const char new_char2[]={0x0,0x0,0x0,BIT2,0x0,BIT2,BIT3+BIT1,BIT4+BIT2+BIT0};
-
-const char new_char3[]={0x0,BIT2,0x0,BIT2,0x0,BIT2,BIT3+BIT1,BIT4+BIT2+BIT0};
-
-const char new_char4[]={BIT2,0x0,BIT2,0x0,0x0,BIT2,BIT3+BIT1,BIT4+BIT2+BIT0};
-
-const char new_char5[]={0x0,BIT2,0x0,0x0,0x0,BIT2,BIT3+BIT1,BIT4+BIT2+BIT0};
-
-const char new_char6[]={BIT2,0x0,0x0,0x0,0x0,BIT2,BIT3+BIT1,BIT4+BIT2+BIT0};
+/************      NUEVO JUEGO DE CARACTERES        ********************/
+char new_char1[]={0x0,0x0,0x0,0x0,0x0,BIT2,BIT3+BIT1,BIT4+BIT2+BIT0};
+char new_char2[]={0x0,0x0,0x0,BIT2,0x0,BIT2,BIT3+BIT1,BIT4+BIT2+BIT0};
+char new_char3[]={0x0,BIT2,0x0,BIT2,0x0,BIT2,BIT3+BIT1,BIT4+BIT2+BIT0};
+char new_char4[]={BIT2,0x0,BIT2,0x0,0x0,BIT2,BIT3+BIT1,BIT4+BIT2+BIT0};
+char new_char5[]={0x0,BIT2,0x0,0x0,0x0,BIT2,BIT3+BIT1,BIT4+BIT2+BIT0};
+char new_char6[]={BIT2,0x0,0x0,0x0,0x0,BIT2,BIT3+BIT1,BIT4+BIT2+BIT0};
+/***********************************************************************/
 
 void main(void)
 {
