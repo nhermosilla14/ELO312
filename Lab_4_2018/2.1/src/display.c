@@ -337,7 +337,7 @@ int putchar(int c)
         unsigned char pos;
 	if (c == '\n')
 	{
-                display_lcd_scroll_up();
+                
 		return c;
 	}
 

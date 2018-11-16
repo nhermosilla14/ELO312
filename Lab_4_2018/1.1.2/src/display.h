@@ -40,5 +40,6 @@ void display_set_pos(unsigned char);
 void display_lcd_clear(int, int);
 
 void display_test_Write_CGRAM_MS(void);
+void display_add_new_character_CGRAM(int pos, char *new_char);
 
 #endif

@@ -51,7 +51,7 @@ int putchar(int c);
 int display_lcd_line(unsigned char);
 int display_lcd_copy(unsigned char, unsigned char, int);
 void display_lcd_scroll_up(void);
-
+void display_add_new_character_CGRAM(int pos, char *new_char);
 /*  Global Variables Section
 *
 ***************************************************/
@@ -335,27 +335,33 @@ int putchar(int c)
 {
 	int line;
         unsigned char pos;
-	if (c == '\n')
-	{
-                display_lcd_scroll_up();
+	if (c == '\n'){
+                pos = display_get_pos();
+                line = display_lcd_line(pos);
+                switch (line){
+                case 0:
+                    display_set_pos(0 + 0x40);
+                    break;
+                case 1:
+                    display_lcd_scroll_up();
+                    display_set_pos(0 + 0x40);
+                    break;
+                }
+                return c;
+	}
+
+	if (c == '\r'){
+                display_set_pos(0);
 		return c;
 	}
 
-	if (c == '\r')
-	{
-		display_set_pos(0);
-		return c;
-	}
-
-	if (c == '\t')
-	{
+	if (c == '\t'){
 		pos = display_get_pos();
-		pos %= 4;
-		display_set_pos(4 - pos);
+		pos = (pos + 1) % 4;
+		display_set_pos(4*(pos+1) - 1);
 		return c;
 	}
-	if( c== '\b')
-	{
+	if( c== '\b'){
 		pos = display_get_pos();
 		if (pos > 0)
                     display_set_pos(pos - 1);
@@ -483,3 +489,23 @@ void display_test_Write_CGRAM_MS(void)
 	}
 }
 
+/**************************************************
+* Nombre    		: void display_add_new_character_CGRAM(int pos, char *new_char)
+* returns		: void
+* arg1			: Posición del caracter nuevo
+* arg2                  : Caracter nuevo a escribir en la CGRAM
+* Creada por		: Nicolás Hermosilla
+* Fecha creación	: 15/11/2018
+* Descripción		: Escribe un nuevo caracter en la CGRAM,
+                          en la dirección dada en address.
+**************************************************/
+
+void display_add_new_character_CGRAM(int pos, char *new_char)
+{
+	int i=0;
+	display_send_cmd(0x40+(pos<<3));//set CG RAM Address
+	for(i=0; i<8; i++)
+	{
+		display_send_data(new_char[i]);
+	}
+}

@@ -10,6 +10,9 @@
   <project>
     <path>$WS_DIR$\2.1\2.1.ewp</path>
   </project>
+  <project>
+    <path>$WS_DIR$\2.4\2.4.ewp</path>
+  </project>
   <batchBuild/>
 </workspace>
 
