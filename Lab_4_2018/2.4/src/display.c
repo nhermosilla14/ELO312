@@ -335,30 +335,46 @@ int putchar(int c)
 {
 	int line;
         unsigned char pos;
-	if (c == '\n')
-	{
-                display_lcd_scroll_up();
+	if (c == '\n'){
+                pos = display_get_pos();
+                line = display_lcd_line(pos);
+                switch (line){
+                case 0:
+                    display_set_pos(0x40);
+                    break;
+                case 1:
+                    display_lcd_scroll_up();
+                    display_set_pos(0x40);
+                    break;
+                }
+                return c;
+	}
+
+	if (c == '\r'){
+                display_set_pos(0);
 		return c;
 	}
 
-	if (c == '\r')
-	{
-		display_set_pos(0);
-		return c;
-	}
-
-	if (c == '\t')
-	{
+	if (c == '\t'){
 		pos = display_get_pos();
-		pos = (pos + 1) % 4;
-		display_set_pos(4*(pos+1) - 1);
+                line = display_lcd_line(pos);
+                switch (line){
+                case 0:
+                    pos = (pos+1) % 4 ? 4*(pos+1/4) + 3 : pos;
+                    break;
+                case 1:
+                    pos = (pos-0x40+1) % 4 ? 4*(pos+1/4) + 3 + 0x40 : pos;
+                    break;
+                }
+		display_set_pos(pos);
 		return c;
 	}
-	if( c== '\b')
-	{
+	if( c== '\b'){
 		pos = display_get_pos();
 		if (pos > 0)
                     display_set_pos(pos - 1);
+                else if (pos == 0x40)
+                    display_set_pos(0x0F);
                 return c;
 	}
 
@@ -460,17 +476,6 @@ void display_lcd_scroll_up(void)
 **************************************************/
 const char new_char0[]={BIT2,BIT3+BIT1,BIT2,BIT4+BIT3+BIT2+BIT1+BIT0,BIT2,BIT3+BIT1,BIT3+BIT1,BIT4+BIT3+BIT1+BIT0};
 
-const char new_char1[]={0x0,0x0,0x0,0x0,0x0,BIT2,BIT3+BIT1,BIT4+BIT2+BIT0};
-
-const char new_char2[]={0x0,0x0,0x0,BIT2,0x0,BIT2,BIT3+BIT1,BIT4+BIT2+BIT0};
-
-const char new_char3[]={0x0,BIT2,0x0,BIT2,0x0,BIT2,BIT3+BIT1,BIT4+BIT2+BIT0};
-
-const char new_char4[]={BIT2,0x0,BIT2,0x0,0x0,BIT2,BIT3+BIT1,BIT4+BIT2+BIT0};
-
-const char new_char5[]={0x0,BIT2,0x0,0x0,0x0,BIT2,BIT3+BIT1,BIT4+BIT2+BIT0};
-
-const char new_char6[]={BIT2,0x0,0x0,0x0,0x0,BIT2,BIT3+BIT1,BIT4+BIT2+BIT0};
 
 void display_test_Write_CGRAM_MS(void)
 {
