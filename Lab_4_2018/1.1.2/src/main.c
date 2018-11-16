@@ -21,6 +21,7 @@ void main(void)
 	printf("LAB ELO312");
 	printf("%c",0x01);
         printf("\r");
+        printf("\n");
         printf("\t");
         printf("\b");
 

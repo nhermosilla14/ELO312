@@ -340,11 +340,11 @@ int putchar(int c)
                 line = display_lcd_line(pos);
                 switch (line){
                 case 0:
-                    display_set_pos(0 + 0x40);
+                    display_set_pos(0x40);
                     break;
                 case 1:
                     display_lcd_scroll_up();
-                    display_set_pos(0 + 0x40);
+                    display_set_pos(0x40);
                     break;
                 }
                 return c;
@@ -357,14 +357,24 @@ int putchar(int c)
 
 	if (c == '\t'){
 		pos = display_get_pos();
-		pos = (pos + 1) % 4;
-		display_set_pos(4*(pos+1) - 1);
+                line = display_lcd_line(pos);
+                switch (line){
+                case 0:
+                    pos = (pos+1) % 4 ? 4*(pos+1/4) + 3 : pos;
+                    break;
+                case 1:
+                    pos = (pos-0x40+1) % 4 ? 4*(pos+1/4) + 3 + 0x40 : pos;
+                    break;
+                }
+		display_set_pos(pos);
 		return c;
 	}
 	if( c== '\b'){
 		pos = display_get_pos();
 		if (pos > 0)
                     display_set_pos(pos - 1);
+                else if (pos == 0x40)
+                    display_set_pos(0x0F);
                 return c;
 	}
 
