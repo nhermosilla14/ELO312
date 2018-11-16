@@ -104,8 +104,8 @@ unsigned char display_wait_BF(void)
           SET_BIT(LCD_RW);
           RST_BIT(LCD_RS);
           LCD_READ(db);
-          add = DB & 0x7F;
-        } while ( DB & 0x80);
+          add = db & 0x7F;
+        } while ( db & 0x80);
 	/*udelay(120); // solucion parche!! */
 
 	return add;
@@ -334,10 +334,10 @@ void display_send_data(char value)
 int putchar(int c)
 {
 	int line;
-    unsigned char pos;
+        unsigned char pos;
 	if (c == '\n')
 	{
-        display_lcd_scroll_up();
+                display_lcd_scroll_up();
 		return c;
 	}
 
@@ -358,8 +358,8 @@ int putchar(int c)
 	{
 		pos = display_get_pos();
 		if (pos > 0)
-            display_set_pos(pos - 1);
-        return c;
+                    display_set_pos(pos - 1);
+                return c;
 	}
 
 	display_send_data((unsigned char) c);

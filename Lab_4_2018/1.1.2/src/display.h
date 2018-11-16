@@ -13,18 +13,18 @@
 #define LCD_WIDTH			16
 
 // defines for data
-#define	LDOUT			P6OUT	// dataport
-#define LDIN			P6IN
-#define	LDSEL			P6SEL
-#define	LDDIR			P6DIR
+#define	LDOUT			P4OUT	// dataport
+#define LDIN			P4IN
+#define	LDSEL			P4SEL
+#define	LDDIR			P4DIR
 
 // defines for control
 #define LCOUT			P3OUT
 #define	LCDIR			P3DIR
 #define LCSEL			P3SEL
-#define	LCD_RS			BIT2	// bit meaning: 1 = Data , 0 = Control
-#define LCD_RW			BIT3	// bit meanings: 0 = Write, 1 = Read
-#define	LCD_E			BIT4	// Enable
+#define	LCD_RS			BIT0	// bit meaning: 1 = Data , 0 = Control
+#define LCD_RW			BIT1	// bit meanings: 0 = Write, 1 = Read
+#define	LCD_E			BIT2	// Enable
 
 /*  Function Prototype Section
 *

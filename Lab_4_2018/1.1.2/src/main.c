@@ -20,6 +20,9 @@ void main(void)
 	display_set_pos(0x00);
 	printf("LAB ELO312");
 	printf("%c",0x01);
+        printf("\r");
+        printf("\t");
+        printf("\b");
 
 	_BIS_SR(LPM0_bits + GIE);  // modo bajo consumo
 

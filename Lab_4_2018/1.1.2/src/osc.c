@@ -19,7 +19,7 @@
 /*  Include section
 *
 ***************************************************/
-#include "msp430_version.h"
+#include <msp430x16x.h>
 
 /*  Defines section
 *
