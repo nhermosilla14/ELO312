@@ -2,9 +2,11 @@
 
 int main ()
 {
-  unsigned int number, power;
+  int number;
   number = 3;
-  power = 2;
-  comparar(number, power);
+ // for (int i = 2; i < 8; i++){
+      int i = 15;
+      comparar(number, i);
+ // }
   return 0;
 }

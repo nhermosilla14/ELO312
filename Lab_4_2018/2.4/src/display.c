@@ -346,12 +346,30 @@ int putchar(int c)
                     display_lcd_scroll_up();
                     display_set_pos(0x40);
                     break;
+                case -1:
+                    if (pos < 0x40){
+                        display_set_pos(0x40);
+                        break;
+                    } else {
+                        display_lcd_scroll_up();
+                        display_set_pos(0x40);
+                        break;
+                    }  
                 }
                 return c;
 	}
 
 	if (c == '\r'){
-                display_set_pos(0);
+                pos = display_get_pos();
+                line = display_lcd_line(pos);
+                switch (line){
+                case 0:
+                    display_set_pos(0);
+                    break;
+                case 1:
+                    display_set_pos(0x40);
+                    break;
+                }
 		return c;
 	}
 
@@ -363,8 +381,8 @@ int putchar(int c)
                     pos = (pos+1) % 4 ? 4*(pos+1/4) + 3 : pos;
                     break;
                 case 1:
-                    pos = (pos-0x40+1) % 4 ? 4*(pos+1/4) + 3 + 0x40 : pos;
-                    break;
+                    pos = (pos-0x40+1) % 4 ? 4*((pos-0x40+1)/4) + 3 + 0x40 : pos;
+                    break;                        
                 }
 		display_set_pos(pos);
 		return c;

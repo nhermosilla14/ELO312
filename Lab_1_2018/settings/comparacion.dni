@@ -9,7 +9,11 @@ TriggerName=main
 LimitSize=0
 ByteLimit=50
 [DebugChecksum]
-Checksum=-1127548834
+Checksum=239650347
+[CallStack]
+ShowArgs=0
+[Disassembly]
+MixedMode=1
 [Log file]
 LoggingEnabled=_ 0
 LogFile=_ ""
@@ -17,10 +21,6 @@ Category=_ 0
 [TermIOLog]
 LoggingEnabled=_ 0
 LogFile=_ ""
-[CallStack]
-ShowArgs=0
-[Disassembly]
-MixedMode=1
 [CallStackLog]
 Enabled=0
 [DriverProfiling]
@@ -44,8 +44,14 @@ ShowTimeLog=1
 ShowTimeSum=1
 [Breakpoints2]
 Bp0=_ 1 "STD_CODE2" "{$PROJ_DIR$\Comparación\funciones.c}.29.3" 0 0 1 "" 0 ""
-Bp1=_ 1 "STD_CODE2" "{$PROJ_DIR$\Comparación\funciones.c}.30.3" 0 0 1 "" 0 ""
-Count=2
+Bp1=_ 1 "STD_CODE2" "{$PROJ_DIR$\Comparación\funciones.c}.29.3" 0 0 1 "" 0 ""
+Bp2=_ 1 "STD_CODE2" "{$PROJ_DIR$\Comparación\funciones.c}.27.3" 0 0 1 "" 0 ""
+Bp3=_ 1 "STD_CODE2" "{$PROJ_DIR$\Comparación\main.c}.11.3" 0 0 1 "" 0 ""
+Bp4=_ 1 "STD_CODE2" "{$PROJ_DIR$\Comparación\main.c}.9.7" 0 0 1 "" 0 ""
+Bp5=_ 1 "STD_CODE2" "{$PROJ_DIR$\Comparación\funciones.c}.20.3" 0 0 1 "" 0 ""
+Bp6=_ 1 "STD_CODE2" "{$PROJ_DIR$\Comparación\funciones.c}.6.3" 0 0 1 "" 0 ""
+Bp7=_ 1 "STD_CODE2" "{$PROJ_DIR$\Comparación\funciones.c}.17.3" 0 0 1 "" 0 ""
+Count=8
 [Interrupts]
 Enabled=1
 [MemoryMap]
