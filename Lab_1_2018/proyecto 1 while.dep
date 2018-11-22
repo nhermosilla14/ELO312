@@ -6,60 +6,60 @@
   <configuration>
     <name>Debug</name>
     <outputs>
+      <file>$TOOLKIT_DIR$\config\multiplier.xcl</file>
+      <file>$TOOLKIT_DIR$\lib\clib\cl430f.r43</file>
+      <file>$PROJ_DIR$\main.c</file>
+      <file>$PROJ_DIR$\Debug\Obj\main.r43</file>
       <file>$PROJ_DIR$\Debug\Exe\proyecto 1 while.ulp</file>
       <file>$PROJ_DIR$\Debug\Exe\proyecto 1 while.d43</file>
-      <file>$PROJ_DIR$\Debug\Obj\main.r43</file>
-      <file>$PROJ_DIR$\main.c</file>
       <file>$PROJ_DIR$\Debug\Obj\main.pbi</file>
-      <file>$TOOLKIT_DIR$\lib\clib\cl430f.r43</file>
-      <file>$TOOLKIT_DIR$\inc\clib\stdarg.h</file>
+      <file>$TOOLKIT_DIR$\inc\clib\stdio.h</file>
       <file>$TOOLKIT_DIR$\config\lnk430F1612.xcl</file>
       <file>$TOOLKIT_DIR$\inc\clib\sysmac.h</file>
-      <file>$TOOLKIT_DIR$\config\multiplier.xcl</file>
-      <file>$TOOLKIT_DIR$\inc\clib\stdio.h</file>
+      <file>$TOOLKIT_DIR$\inc\clib\stdarg.h</file>
     </outputs>
     <file>
       <name>[ROOT_NODE]</name>
       <outputs>
         <tool>
           <name>XLINK</name>
-          <file> 1</file>
+          <file> 5</file>
         </tool>
         <tool>
           <name>ULP430</name>
-          <file> 0</file>
+          <file> 4</file>
         </tool>
       </outputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\Debug\Exe\proyecto 1 while.d43</name>
-      <inputs>
-        <tool>
-          <name>XLINK</name>
-          <file> 7 9 2 5</file>
-        </tool>
-      </inputs>
     </file>
     <file>
       <name>$PROJ_DIR$\main.c</name>
       <outputs>
         <tool>
           <name>ICC430</name>
-          <file> 2</file>
+          <file> 3</file>
         </tool>
         <tool>
           <name>BICOMP</name>
-          <file> 4</file>
+          <file> 6</file>
         </tool>
       </outputs>
       <inputs>
         <tool>
           <name>ICC430</name>
-          <file> 10 6 8</file>
+          <file> 7 10 9</file>
         </tool>
         <tool>
           <name>BICOMP</name>
-          <file> 10 6 8</file>
+          <file> 7 10 9</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\Debug\Exe\proyecto 1 while.d43</name>
+      <inputs>
+        <tool>
+          <name>XLINK</name>
+          <file> 8 0 3 1</file>
         </tool>
       </inputs>
     </file>

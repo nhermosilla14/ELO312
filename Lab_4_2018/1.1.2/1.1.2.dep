@@ -7,39 +7,39 @@
     <name>Debug</name>
     <outputs>
       <file>$PROJ_DIR$\src\display.c</file>
-      <file>$PROJ_DIR$\src\osc.c</file>
-      <file>$PROJ_DIR$\src\main.c</file>
       <file>$PROJ_DIR$\Debug\Obj\osc.pbi</file>
-      <file>$PROJ_DIR$\Debug\Obj\main.r43</file>
-      <file>$TOOLKIT_DIR$\inc\clib\stdarg.h</file>
-      <file>$PROJ_DIR$\Debug\Obj\display.pbi</file>
-      <file>$TOOLKIT_DIR$\inc\clib\stdio.h</file>
-      <file>$TOOLKIT_DIR$\inc\intrinsics.h</file>
-      <file>$PROJ_DIR$\Debug\Obj\display.r43</file>
-      <file>$TOOLKIT_DIR$\lib\clib\cl430f.r43</file>
-      <file>$PROJ_DIR$\Debug\Exe\1.1.2.d43</file>
-      <file>$PROJ_DIR$\src\msp430_version.h</file>
+      <file>$PROJ_DIR$\src\main.c</file>
+      <file>$PROJ_DIR$\src\osc.c</file>
       <file>$TOOLKIT_DIR$\config\lnk430F1612.xcl</file>
-      <file>$PROJ_DIR$\src\display.h</file>
-      <file>$TOOLKIT_DIR$\inc\in430.h</file>
+      <file>$TOOLKIT_DIR$\inc\clib\stdarg.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\main.r43</file>
       <file>$PROJ_DIR$\Debug\Obj\main.pbi</file>
+      <file>$TOOLKIT_DIR$\inc\intrinsics.h</file>
       <file>$PROJ_DIR$\Debug\Exe\1.1.2.ulp</file>
       <file>$PROJ_DIR$\src\osc.h</file>
-      <file>$TOOLKIT_DIR$\inc\clib\sysmac.h</file>
-      <file>$PROJ_DIR$\Debug\Obj\osc.r43</file>
-      <file>$TOOLKIT_DIR$\config\multiplier.xcl</file>
+      <file>$TOOLKIT_DIR$\inc\clib\stdio.h</file>
+      <file>$PROJ_DIR$\src\display.h</file>
       <file>$TOOLKIT_DIR$\inc\msp430x16x.h</file>
+      <file>$TOOLKIT_DIR$\inc\clib\sysmac.h</file>
+      <file>$PROJ_DIR$\Debug\Exe\1.1.2.d43</file>
+      <file>$PROJ_DIR$\src\msp430_version.h</file>
+      <file>$TOOLKIT_DIR$\inc\in430.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\osc.r43</file>
+      <file>$PROJ_DIR$\Debug\Obj\display.r43</file>
+      <file>$TOOLKIT_DIR$\config\multiplier.xcl</file>
+      <file>$PROJ_DIR$\Debug\Obj\display.pbi</file>
+      <file>$TOOLKIT_DIR$\lib\clib\cl430f.r43</file>
     </outputs>
     <file>
       <name>[ROOT_NODE]</name>
       <outputs>
         <tool>
-          <name>ULP430</name>
-          <file> 17</file>
+          <name>XLINK</name>
+          <file> 15</file>
         </tool>
         <tool>
-          <name>XLINK</name>
-          <file> 11</file>
+          <name>ULP430</name>
+          <file> 9</file>
         </tool>
       </outputs>
     </file>
@@ -48,44 +48,21 @@
       <outputs>
         <tool>
           <name>ICC430</name>
-          <file> 9</file>
+          <file> 19</file>
         </tool>
         <tool>
           <name>BICOMP</name>
-          <file> 6</file>
+          <file> 21</file>
         </tool>
       </outputs>
       <inputs>
         <tool>
           <name>ICC430</name>
-          <file> 14 12 22 15 8</file>
+          <file> 12 16 13 17 8</file>
         </tool>
         <tool>
           <name>BICOMP</name>
-          <file> 14 12 22 15 8</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\src\osc.c</name>
-      <outputs>
-        <tool>
-          <name>ICC430</name>
-          <file> 20</file>
-        </tool>
-        <tool>
-          <name>BICOMP</name>
-          <file> 3</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>ICC430</name>
-          <file> 22 15 8</file>
-        </tool>
-        <tool>
-          <name>BICOMP</name>
-          <file> 22 15 8</file>
+          <file> 12 16 13 17 8</file>
         </tool>
       </inputs>
     </file>
@@ -94,21 +71,44 @@
       <outputs>
         <tool>
           <name>ICC430</name>
-          <file> 4</file>
+          <file> 6</file>
         </tool>
         <tool>
           <name>BICOMP</name>
-          <file> 16</file>
+          <file> 7</file>
         </tool>
       </outputs>
       <inputs>
         <tool>
           <name>ICC430</name>
-          <file> 12 22 15 8 7 5 19 14 18</file>
+          <file> 16 13 17 8 11 5 14 12 10</file>
         </tool>
         <tool>
           <name>BICOMP</name>
-          <file> 12 22 15 8 7 5 19 14 18</file>
+          <file> 16 13 17 8 11 5 14 12 10</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\src\osc.c</name>
+      <outputs>
+        <tool>
+          <name>ICC430</name>
+          <file> 18</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 1</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICC430</name>
+          <file> 13 17 8</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 13 17 8</file>
         </tool>
       </inputs>
     </file>
@@ -117,7 +117,7 @@
       <inputs>
         <tool>
           <name>XLINK</name>
-          <file> 13 21 9 4 20 10</file>
+          <file> 4 20 19 6 18 22</file>
         </tool>
       </inputs>
     </file>
