@@ -33,6 +33,8 @@
       <file>$TOOLKIT_DIR$\inc\in430.h</file>
       <file>$PROJ_DIR$\Debug\Exe\2.1.ulp</file>
       <file>$PROJ_DIR$\Debug\Obj\display.r43</file>
+      <file>$PROJ_DIR$\..\2.1.2\src\keyboard.c</file>
+      <file>$PROJ_DIR$\..\2.1.2\src\keyboard.h</file>
       <file>$PROJ_DIR$\Debug\Exe\2.1.1.ulp</file>
       <file>$PROJ_DIR$\Debug\Obj\2.1.pbd</file>
       <file>$PROJ_DIR$\Debug\Exe\2.1.1.d43</file>
@@ -166,13 +168,22 @@
       <outputs>
         <tool>
           <name>XLINK</name>
-          <file> 14 29</file>
+          <file> 31</file>
         </tool>
         <tool>
           <name>ULP430</name>
-          <file> 25 27</file>
+          <file> 29</file>
         </tool>
       </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\Debug\Exe\2.1.1.d43</name>
+      <inputs>
+        <tool>
+          <name>XLINK</name>
+          <file> 6 20 26 23 19 12 22 0</file>
+        </tool>
+      </inputs>
     </file>
   </configuration>
   <configuration>

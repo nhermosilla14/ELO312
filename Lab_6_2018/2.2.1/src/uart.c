@@ -21,6 +21,7 @@
 ***************************************************/
 #include "msp430_version.h"// Depende del uC que Ud. esté ocupando.
 #include "uart.h"
+#include "display.h"
 
 /*  Defines section
 *
@@ -114,6 +115,11 @@ del RX del modulo UART.
 #pragma vector=UART0RX_VECTOR
 __interrupt void uart_uart0_rx (void)
 {
-	// fill in
+  
+  if (!(IFG1 & URXIFG0))
+  {
+    char caracter = U0RXBUF;
+    putchar(caracter);
+  }
 }
 

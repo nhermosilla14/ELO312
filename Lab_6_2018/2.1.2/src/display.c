@@ -334,9 +334,8 @@ void display_send_data(char value)
 int putchar(int c)
 {
 	int line;
-        unsigned char pos;
+        unsigned char pos = display_get_pos();
 	if (c == '\n'){
-                pos = display_get_pos();
                 line = display_lcd_line(pos);
                 switch (line){
                 case 0:
@@ -360,7 +359,6 @@ int putchar(int c)
 	}
 
 	if (c == '\r'){
-                pos = display_get_pos();
                 line = display_lcd_line(pos);
                 switch (line){
                 case 0:
@@ -374,7 +372,6 @@ int putchar(int c)
 	}
 
 	if (c == '\t'){
-		pos = display_get_pos();
                 line = display_lcd_line(pos);
                 switch (line){
                 case 0:
@@ -388,14 +385,21 @@ int putchar(int c)
 		return c;
 	}
 	if( c== '\b'){
-		pos = display_get_pos();
-		if (pos > 0)
-                    display_set_pos(pos - 1);
-                else if (pos == 0x40)
-                    display_set_pos(0x0F);
-                return c;
+          if (pos == 0x41){
+            display_set_pos(0x10);
+            putchar(' ');
+            display_set_pos(0x10);
+          } else if (pos > 0){
+            display_set_pos(pos-1);
+            putchar(' ');
+            display_set_pos(pos-1);
+          }
+            
+          return c;
 	}
-
+        if ((pos == 0x10) || (pos == 0x50)){
+          putchar('\n');
+        } 
 	display_send_data((unsigned char) c);
 	return c;
 }

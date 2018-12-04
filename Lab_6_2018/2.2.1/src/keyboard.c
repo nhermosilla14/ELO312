@@ -22,6 +22,7 @@
 ***************************************************/
 #include "keyboard.h"
 #include "display.h"
+#include "uart.h"
 /*  Defines section
 *
 ***************************************************/
@@ -161,64 +162,64 @@ void keyboard_button_action(char tecla)
   case 'A':
     if (letra != 'A'){
      // letra = 'A';
-      putchar(65);
+      uart_0_send(65);
     }
     break;
   case 'B':
     if (letra != 'B'){
-      putchar(66);
+      uart_0_send(66);
      // letra = 'B';
     }
     break;
   case 'C':
     if (letra != 'C'){
-      putchar(67);
+      uart_0_send(67);
     //letra = 'C';
     }
     break;
   case 'D':
     if (letra != 'D'){
-      putchar(68);
+      uart_0_send(68);
     //  letra = 'D';
     }
     break;
   case '*':
-    putchar('\b');
+    uart_0_send('\b');
     break;
   case '#':
-    putchar('\n');
+    uart_0_send('\n');
     break;
   case '1':
-    putchar('0');
+    uart_0_send('0');
     break;
   case '2':
-    putchar('1');
+    uart_0_send('1');
     break;
   case '3':
-    putchar('2');
+    uart_0_send('2');
     break;
   case '4':
-    putchar('4');
+    uart_0_send('4');
     break;
   case '5':
-    putchar('5');
+    uart_0_send('5');
     break;
   case '6':
-    putchar('6');
+    uart_0_send('6');
     break;
   case '7':
-    putchar('8');
+    uart_0_send('8');
     break;
   case '8':
-    putchar('9');
+    uart_0_send('9');
     break;
   case '9':
-    putchar('1');
-    putchar('0');
+    uart_0_send('1');
+    uart_0_send('0');
     break;
   case '0':
-    putchar('1');
-    putchar('4');
+    uart_0_send('1');
+    uart_0_send('4');
     break;
   }
     letra = tecla_real;
@@ -285,8 +286,7 @@ char keyboard_button_translate(char tecla)
   case 15:
     return('1'); 
     break;
-  }
-  return 0;
+  } 
 }
 
 /**************************************************
